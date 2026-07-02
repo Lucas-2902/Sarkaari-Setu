@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EWS</title>
+</head>
+<style>
+    /* ===========================
+   COMMON STYLING
+=========================== */
+
+body{
+    margin:0;
+    padding:40px;
+    background:#f4f7fc;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    color:#333;
+}
+
+/* ===========================
+   APPLICATION PAGE
+=========================== */
+
+.application-container{
+    max-width:850px;
+    margin:auto;
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+    border-top:6px solid #1565c0;
+}
+
+.application-container h1{
+    text-align:center;
+    color:#1565c0;
+    margin-bottom:30px;
+    font-size:34px;
+}
+
+.application-container p{
+    font-size:17px;
+    line-height:1.9;
+    margin-bottom:18px;
+}
+
+.application-container strong{
+    color:#0d47a1;
+}
+
+.application-container table{
+    width:100%;
+    margin-top:30px;
+    border-collapse:collapse;
+}
+
+.application-container table td{
+    padding:10px 0;
+    font-size:16px;
+}
+
+.application-container table td:first-child{
+    width:170px;
+    font-weight:bold;
+}
+
+/* ===========================
+   GUIDE PAGE
+=========================== */
+
+.guide-container{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+    border-top:6px solid #2e7d32;
+}
+
+.guide-container h1{
+    text-align:center;
+    color:#2e7d32;
+    font-size:34px;
+    margin-bottom:35px;
+}
+
+.guide-container h2{
+    color:#1565c0;
+    margin-top:30px;
+    margin-bottom:12px;
+    border-left:5px solid #1565c0;
+    padding-left:10px;
+    font-size:23px;
+}
+
+.guide-container p{
+    font-size:17px;
+    line-height:1.8;
+    color:#555;
+}
+
+.guide-container ul{
+    padding-left:30px;
+    margin-bottom:20px;
+}
+
+.guide-container ul li{
+    margin:10px 0;
+    font-size:17px;
+    line-height:1.7;
+}
+
+.guide-container ul li::marker{
+    color:#2e7d32;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .application-container,
+    .guide-container{
+        padding:25px;
+    }
+
+    .application-container h1,
+    .guide-container h1{
+        font-size:28px;
+    }
+
+    .guide-container h2{
+        font-size:20px;
+    }
+
+    .application-container p,
+    .guide-container p,
+    .guide-container ul li{
+        font-size:15px;
+    }
+
+}
+         #back{
+            height: 100px;
+            width: 100%;
+            position: fixed;
+        }
+        #backbtn{
+color: red;
+        }
+</style>
+    <body>
+<div id="back">
+    <button id="backbtn" onclick="window.location.href='index.html'">Back</button>
+</div>
+<div class="application-container">
+    <h1>EWS Certificate Application</h1>
+
+    <p><strong>To,</strong><br>
+    The Tehsildar/Sub-Divisional Magistrate,<br>
+    ___________________________<br>
+    (District/Tehsil Name)</p>
+
+    <p><strong>Subject:</strong> Application for Issuance of EWS Certificate</p>
+
+    <p>
+        Respected Sir/Madam,
+    </p>
+
+    <p>
+        I, <strong>______________________</strong> (Name),
+        son/daughter/wife of
+        <strong>______________________</strong>,
+        resident of
+        <strong>________________________________________________</strong>,
+        respectfully request you to issue me an Economically Weaker Section (EWS) Certificate.
+    </p>
+
+    <p>
+        I belong to the General Category and fulfill the prescribed income and asset criteria for EWS reservation. The certificate is required for
+        <strong>______________________________________</strong>
+        (Education/Government Job/Admission/Other Purpose).
+    </p>
+
+    <p>
+        I have enclosed all the necessary supporting documents for verification.
+    </p>
+
+    <p>
+        I kindly request you to process my application and issue the EWS Certificate at the earliest.
+    </p>
+
+    <p>
+        Thanking you.
+    </p>
+
+    <p>
+        Yours faithfully,
+    </p>
+
+    <br><br>
+
+    <table>
+        <tr>
+            <td><strong>Signature:</strong></td>
+            <td>________________________</td>
+        </tr>
+        <tr>
+            <td><strong>Name:</strong></td>
+            <td>________________________</td>
+        </tr>
+        <tr>
+            <td><strong>Mobile No.:</strong></td>
+            <td>________________________</td>
+        </tr>
+        <tr>
+            <td><strong>Aadhaar No.:</strong></td>
+            <td>________________________</td>
+        </tr>
+        <tr>
+            <td><strong>Date:</strong></td>
+            <td>________________________</td>
+        </tr>
+        <tr>
+            <td><strong>Place:</strong></td>
+            <td>________________________</td>
+        </tr>
+    </table>
+
+</div>
+<section>
+
+<div class="guide-container">
+
+    <h1>📋 Guide to Apply for an EWS Certificate</h1>
+
+    <h2>Step 1: Check Eligibility</h2>
+    <p>
+        Ensure that you belong to the General Category and meet the
+        income and asset criteria prescribed by the Government for
+        Economically Weaker Sections (EWS).
+    </p>
+
+    <h2>Step 2: Collect Required Documents</h2>
+    <ul>
+        <li>Aadhaar Card</li>
+        <li>Identity Proof (Voter ID/PAN Card/Driving Licence, etc.)</li>
+        <li>Address Proof</li>
+        <li>Income Certificate or Income Proof</li>
+        <li>Passport-size Photograph</li>
+        <li>Self Declaration (if required)</li>
+        <li>Any other document requested by the local authority</li>
+    </ul>
+
+    <h2>Step 3: Fill the Application Form</h2>
+    <p>
+        Fill the EWS Certificate Application Form carefully with correct
+        personal details, address, family income information, and purpose
+        of the certificate.
+    </p>
+
+    <h2>Step 4: Submit the Application</h2>
+    <p>
+        Submit the completed form along with all supporting documents
+        to the Tehsil Office, SDM Office, CSC Centre, or through the
+        State Government's online portal (where available).
+    </p>
+
+    <h2>Step 5: Verification Process</h2>
+    <p>
+        The concerned authority will verify your documents and may
+        conduct additional verification if necessary.
+    </p>
+
+    <h2>Step 6: Certificate Issuance</h2>
+    <p>
+        After successful verification, the EWS Certificate will be issued.
+        You can collect it from the office or download it online if your
+        state provides digital services.
+    </p>
+
+    <h2>Important Notes</h2>
+    <ul>
+        <li>Provide only genuine documents and information.</li>
+        <li>Incomplete applications may be rejected.</li>
+        <li>Keep photocopies of all submitted documents for future reference.</li>
+        <li>Processing time varies by state and district.</li>
+    </ul>
+
+</div>
+</section>
+
+</body>
+
+</html>

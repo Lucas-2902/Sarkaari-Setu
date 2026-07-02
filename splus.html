@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarkaari-Setu+ AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background-color: #111111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    padding:15px;
+}
+
+.chat-container{
+    width:100%;
+    max-width:900px;
+    height:90vh;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+.chat-header{
+    background:#1e40af;
+    color:white;
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:55px;
+    height:55px;
+    background:#FFD700;
+    color:#1e40af;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    font-size:24px;
+}
+
+.header-text h2{
+    font-size:22px;
+}
+
+.header-text p{
+    font-size:13px;
+    opacity:.9;
+}
+
+.chat-messages{
+    flex:1;
+    overflow-y:auto;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    background:#f7f9ff;
+}
+
+.message{
+    max-width:75%;
+    padding:12px 16px;
+    border-radius:15px;
+    line-height:1.5;
+}
+
+.ai-message{
+    align-self:flex-start;
+    background:white;
+    border:1px solid #dbe3ff;
+}
+
+.user-message{
+    align-self:flex-end;
+    background:#1e40af;
+    color:white;
+}
+
+.quick-actions{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+    padding:10px 15px;
+    border-top:1px solid #e5e7eb;
+    background:white;
+}
+
+.quick-actions button{
+    border:none;
+    background:#eef3ff;
+    color:#1e40af;
+    padding:10px 15px;
+    border-radius:30px;
+    cursor:pointer;
+    white-space:nowrap;
+    font-weight:bold;
+}
+
+.quick-actions button:hover{
+    background:#dbe5ff;
+}
+
+.chat-input{
+    padding:15px;
+    display:flex;
+    gap:10px;
+    background:white;
+    border-top:1px solid #e5e7eb;
+}
+
+.chat-input input{
+    flex:1;
+    padding:14px;
+    border:2px solid #dbe3ff;
+    border-radius:30px;
+    outline:none;
+    font-size:15px;
+}
+
+.chat-input input:focus{
+    border-color:#1e40af;
+}
+
+.chat-input button{
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#1e40af;
+    color:white;
+    cursor:pointer;
+    font-size:20px;
+}
+
+.chat-input button:hover{
+    transform:scale(1.05);
+}
+
+@media(max-width:768px){
+
+    .chat-container{
+        height:100vh;
+        border-radius:0;
+    }
+
+    .message{
+        max-width:90%;
+    }
+
+    .header-text h2{
+        font-size:18px;
+    }
+}
+</style>
+<body>
+<div class="chat-container">
+
+    <div class="chat-header">
+        <div class="logo">S+</div>
+        <div class="header-text">
+            <h2>Sarkaari-Setu+ AI</h2>
+            <p>Your Government Assistant</p>
+        </div>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+
+        <div class="message ai-message">
+            👋 Hello! How can I help you today?
+        </div>
+
+        <div class="message user-message">
+            How do I apply for an EWS Certificate?
+        </div>
+
+        <div class="message ai-message">
+            You can apply through your state's e-District portal or visit your local Tehsil office.
+        </div>
+
+    </div>
+
+    <div class="quick-actions">
+        <button>📄 EWS Certificate</button>
+        <button>🪪 Income Certificate</button>
+        <button>🏫 Find Boards</button>
+        <button>📋 Schemes</button>
+    </div>
+
+    <div class="chat-input">
+        <input
+            type="text"
+            id="userInput"
+            placeholder="Ask Sarkaari-Setu+ AI..."
+        >
+        <button id="sendBtn">➤</button>
+    </div>
+
+</div>
+
+</body>
+</html>
+</body>
+</html>
