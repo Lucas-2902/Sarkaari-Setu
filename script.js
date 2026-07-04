@@ -2,10 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 console.log("✅ Sarkaari-Setu+ Loaded");
-
-// =========================
+    
 // ELEMENTS
-// =========================
 const popup = document.getElementById("languagePopup");
 const englishBtn = document.getElementById("englishBtn");
 const hindiBtn = document.getElementById("hindiBtn");
@@ -25,16 +23,12 @@ const countText = document.querySelector(".count");
 
 let currentLanguage = "hindi";
 
-// =========================
 // INITIAL STATE
-// =========================
 if (formatsSection) {
     formatsSection.style.display = "none";
 }
 
-// =========================
 // LANGUAGE FUNCTIONS
-// =========================
 function changeToEnglish() {
 
     currentLanguage = "english";
@@ -70,10 +64,7 @@ function changeToEnglish() {
 }
 
 
-
-// =========================
 // POPUP BUTTONS
-// =========================
 if (englishBtn) {
     englishBtn.addEventListener("click", () => {
         popup.style.display = "none";
@@ -88,9 +79,7 @@ if (hindiBtn) {
     });
 }
 
-// =========================
 // LANGUAGE TOGGLE
-// =========================
 if (langToggle) {
 
     langToggle.addEventListener("click", () => {
@@ -105,9 +94,7 @@ if (langToggle) {
 
 }
 
-// =========================
 // TABS
-// =========================
 function showBoards() {
 
     if (boardsSection) {
@@ -144,9 +131,7 @@ if (formatBtn) {
     formatBtn.addEventListener("click", showFormats);
 }
 
-// =========================
 // BOARD SEARCH
-// =========================
 if (boardSearch) {
 
     boardSearch.addEventListener("keyup", () => {
@@ -172,9 +157,7 @@ if (boardSearch) {
 
 }
 
-// =========================
 // FORMAT SEARCH
-// =========================
 if (formatSearch) {
 
     formatSearch.addEventListener("keyup", () => {
@@ -212,14 +195,12 @@ if (formatSearch) {
 
 }
 
-// =========================
 // DEFAULT
-// =========================
 showBoards();
 
 
 });
-//for the first earch to work
+//for the first search to work
 const searchInput = document.getElementById('searchInput');
 const cardsContainer = document.getElementById('cardsContainer');
 const resultCount = document.getElementById('resultCount');
@@ -252,10 +233,6 @@ function filterCards() {
 
 // Real-time search as user types
 searchInput.addEventListener('input', filterCards);
-
-
-
-
 
 //data dictionary
 
