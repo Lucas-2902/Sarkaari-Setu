@@ -1,0 +1,19 @@
+{
+  "name": "sarkaari-setu",
+  "version": "1.0.0",
+  "description": "Sarkaari Setu - Government Services Portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "government",
+    "services",
+    "india"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
