@@ -579,6 +579,14 @@ const translations = {
 "Application format for name correction in birth certificate.":"जन्म प्रमाण-पत्र में नाम सुधार के लिए आवेदन का प्रारूप।",
 
 "Application format for address correction in municipal records.":"नगरपालिका रिकॉर्ड में पता ठीक कराने के लिए आवेदन का प्रारूप।",
+    "Disclaimer":"अस्वीकरण",
+"Privacy-Policy":"गोपनीयता नीति",
+"Terms and Conditions":"नियम एवं शर्तें",
+"Contact":"संपर्क करें",
+"Thank You ❤️":"धन्यवाद ❤️",
+"Thank you for visiting ❤️Sarkaari Setu. Our mission is to make government information more accessible, transparent, and easy to understand for everyone. We sincerely appreciate your trust in our platform.":"❤️सरकारी सेतु पर आने के लिए आपका धन्यवाद। हमारा उद्देश्य सरकारी जानकारी को सभी के लिए अधिक सुलभ, पारदर्शी और समझने में आसान बनाना है। हमारे प्लेटफ़ॉर्म पर आपके विश्वास के लिए हम हृदय से आभारी हैं।",
+"If you find Sarkaari Setu helpful, please consider supporting our mission by sharing the website with your friends, family, classmates, and anyone who may benefit from it. Your support helps us reach more people and continue improving our platform.":"यदि आपको सरकारी सेतु उपयोगी लगे, तो कृपया हमारी वेबसाइट को अपने मित्रों, परिवार, सहपाठियों और उन सभी लोगों के साथ साझा करें जिन्हें इससे लाभ मिल सकता है। आपका सहयोग हमें अधिक लोगों तक पहुँचने और अपने प्लेटफ़ॉर्म को लगातार बेहतर बनाने में मदद करता है।",
+"We also encourage all users to verify important information through the respective official government websites before making any decisions.":"हम सभी उपयोगकर्ताओं को सलाह देते हैं कि किसी भी महत्वपूर्ण निर्णय से पहले संबंधित आधिकारिक सरकारी वेबसाइटों पर जाकर जानकारी की पुष्टि अवश्य करें।",
 };
 
 function translateToHindi() {
