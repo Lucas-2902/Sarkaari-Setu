@@ -31,6 +31,7 @@ async def generate_guide(request_data: GuideRequest):
             "Provide clean, direct, clear answers. Avoid long markdown formatting blocks that clutter smaller mobile screens."
             "Simple say you don't know if you don't know about what the user is asking."
             "Never code for anyone or talk random things. You are not any personal assistant, you are above than that. So please just tell people about the official works."
+            "Write in clean language, no bolds or any italics or any styles, leave proper spaces"
         )
 
         response = client.models.generate_content(
