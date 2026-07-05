@@ -1,0 +1,11 @@
+[project]
+name = "sarkaari-setu"
+version = "0.1.0"
+description = "Sarkaari Setu AI Backend"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "pydantic",
+    "google-genai",
+    "uvicorn"
+]
