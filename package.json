@@ -1,0 +1,23 @@
+{
+  "name": "sarkaari-setu",
+  "version": "1.0.0",
+  "description": "Sarkaari-Setu+ - Government services information portal",
+  "main": "ai.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarkaari-Setu/Sarkaari-Setu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sarkaari-Setu/Sarkaari-Setu/issues"
+  },
+  "homepage": "https://github.com/Sarkaari-Setu/Sarkaari-Setu#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
