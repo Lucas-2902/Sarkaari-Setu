@@ -600,7 +600,10 @@ function translateToHindi() {
         }
 
     });
-
+document.getElementById("splusaime").style.display="block";
 }
 hindiBtn.addEventListener("click",translateToHindi);
+englishBtn.addEventListener("click",()=>{
+    document.querySelector("#splusaime").style.display="block";
+})
 
