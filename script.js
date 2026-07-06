@@ -587,6 +587,80 @@ const translations = {
 "Thank you for visiting ❤️Sarkaari Setu. Our mission is to make government information more accessible, transparent, and easy to understand for everyone. We sincerely appreciate your trust in our platform.":"❤️सरकारी सेतु पर आने के लिए आपका धन्यवाद। हमारा उद्देश्य सरकारी जानकारी को सभी के लिए अधिक सुलभ, पारदर्शी और समझने में आसान बनाना है। हमारे प्लेटफ़ॉर्म पर आपके विश्वास के लिए हम हृदय से आभारी हैं।",
 "If you find Sarkaari Setu helpful, please consider supporting our mission by sharing the website with your friends, family, classmates, and anyone who may benefit from it. Your support helps us reach more people and continue improving our platform.":"यदि आपको सरकारी सेतु उपयोगी लगे, तो कृपया हमारी वेबसाइट को अपने मित्रों, परिवार, सहपाठियों और उन सभी लोगों के साथ साझा करें जिन्हें इससे लाभ मिल सकता है। आपका सहयोग हमें अधिक लोगों तक पहुँचने और अपने प्लेटफ़ॉर्म को लगातार बेहतर बनाने में मदद करता है।",
 "We also encourage all users to verify important information through the respective official government websites before making any decisions.":"हम सभी उपयोगकर्ताओं को सलाह देते हैं कि किसी भी महत्वपूर्ण निर्णय से पहले संबंधित आधिकारिक सरकारी वेबसाइटों पर जाकर जानकारी की पुष्टि अवश्य करें।",
+
+    "mAadhaar":"एमआधार",
+"Citizen Service":"नागरिक सेवा",
+"Download and manage your Aadhaar digitally through the official app.":"आधिकारिक ऐप के माध्यम से अपने आधार को डिजिटल रूप से डाउनलोड करें और प्रबंधित करें।",
+
+"Voter ID Services":"मतदाता पहचान पत्र सेवाएँ",
+"Election":"चुनाव",
+"Apply for a new Voter ID, update details and download your voter card.":"नया मतदाता पहचान पत्र बनवाएँ, विवरण अपडेट करें और अपना मतदाता कार्ड डाउनलोड करें।",
+
+"eShram Portal":"ई-श्रम पोर्टल",
+"Employment":"रोजगार",
+"Register as an unorganized worker and receive government benefits.":"असंगठित श्रमिक के रूप में पंजीकरण करें और सरकारी लाभ प्राप्त करें।",
+
+"Udyam Registration":"उद्यम पंजीकरण",
+"Business":"व्यवसाय",
+"Register your Micro, Small and Medium Enterprise (MSME).":"अपने सूक्ष्म, लघु एवं मध्यम उद्यम (MSME) का पंजीकरण करें।",
+
+"Startup India":"स्टार्टअप इंडिया",
+"Register your startup and access government support programs.":"अपने स्टार्टअप का पंजीकरण करें और सरकारी सहायता योजनाओं का लाभ उठाएँ।",
+
+"GeM Portal":"जेम पोर्टल",
+"Government e-Marketplace for procurement of goods and services.":"सरकारी वस्तुओं एवं सेवाओं की खरीद के लिए ई-मार्केटप्लेस।",
+
+"PM Mudra Yojana":"प्रधानमंत्री मुद्रा योजना",
+"Finance":"वित्त",
+"Apply for business loans under the Pradhan Mantri Mudra Yojana.":"प्रधानमंत्री मुद्रा योजना के अंतर्गत व्यवसाय ऋण के लिए आवेदन करें।",
+
+"Atal Pension Yojana":"अटल पेंशन योजना",
+"Pension":"पेंशन",
+"Join the government-backed pension scheme for retirement security.":"सेवानिवृत्ति सुरक्षा हेतु सरकार समर्थित पेंशन योजना से जुड़ें।",
+
+"National Pension System (NPS)":"राष्ट्रीय पेंशन प्रणाली (एनपीएस)",
+"Open and manage your National Pension System account.":"अपना राष्ट्रीय पेंशन प्रणाली (एनपीएस) खाता खोलें और प्रबंधित करें।",
+
+"Jeevan Pramaan":"जीवन प्रमाण",
+"Generate a Digital Life Certificate for pensioners.":"पेंशनभोगियों के लिए डिजिटल जीवन प्रमाण पत्र बनवाएँ।",
+
+"eCourts Services":"ई-कोर्ट्स सेवाएँ",
+"Judiciary":"न्यायपालिका",
+"Check case status, orders, cause lists and court information.":"मामले की स्थिति, आदेश, कॉज़ लिस्ट और न्यायालय संबंधी जानकारी देखें।",
+
+"Cyber Crime Portal":"साइबर अपराध पोर्टल",
+"Safety":"सुरक्षा",
+"Report cyber crimes and online fraud incidents.":"साइबर अपराध और ऑनलाइन धोखाधड़ी की शिकायत दर्ज करें।",
+
+"PM Fasal Bima Yojana":"प्रधानमंत्री फसल बीमा योजना",
+"Agriculture":"कृषि",
+"Crop insurance scheme for Indian farmers.":"भारतीय किसानों के लिए फसल बीमा योजना।",
+
+"eNAM":"ई-नाम",
+"National Agriculture Market for online trading of farm produce.":"कृषि उपज के ऑनलाइन व्यापार हेतु राष्ट्रीय कृषि बाज़ार।",
+
+"Jan Aushadhi":"जन औषधि",
+"Healthcare":"स्वास्थ्य सेवा",
+"Find affordable generic medicines through Jan Aushadhi Kendras.":"जन औषधि केंद्रों के माध्यम से किफायती जेनेरिक दवाइयाँ प्राप्त करें।",
+
+"ABHA Health ID":"आभा हेल्थ आईडी",
+"Create your Ayushman Bharat Health Account (ABHA).":"अपना आयुष्मान भारत स्वास्थ्य खाता (ABHA) बनाएँ।",
+
+"eSanjeevani":"ई-संजीवनी",
+"Consult doctors online through the Government telemedicine service.":"सरकारी टेलीमेडिसिन सेवा के माध्यम से ऑनलाइन डॉक्टरों से परामर्श लें।",
+
+"CoWIN":"कोविन",
+"Access vaccination certificates and related health services.":"टीकाकरण प्रमाणपत्र और संबंधित स्वास्थ्य सेवाओं का उपयोग करें।",
+
+"IRCTC":"आईआरसीटीसी",
+"Travel":"यात्रा",
+"Book railway tickets and manage train reservations online.":"रेलवे टिकट बुक करें और ऑनलाइन आरक्षण प्रबंधित करें।",
+
+"FASTag":"फास्टैग",
+"Transport":"परिवहन",
+"Recharge and manage your FASTag account for toll payments.":"टोल भुगतान के लिए अपने फास्टैग खाते को रिचार्ज करें और प्रबंधित करें।",
+
+"Visit Website":"वेबसाइट पर जाएँ"
 };
 
 function translateToHindi() {
