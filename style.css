@@ -411,14 +411,11 @@ h3{
     background-image: url('S+.png');
     background-repeat: no-repeat;
     background-position: center; 
+    background-size: cover;
 }
 
 #splusaime:hover {
     cursor: pointer;
-}
-
-#splus button {
-    border-radius: 50%;
 }
 /* Responsive */
 
