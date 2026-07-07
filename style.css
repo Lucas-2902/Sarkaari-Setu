@@ -397,31 +397,14 @@ h3{
     transition: all 0.3s ease;
 }
 
-.splus{
-    width:100%;
-    max-width:100px;
-    height:auto;
-   opacity: 100%;
-    border-radius: 50%;
-}
-
 #splusaime {
-    height: 180px;
-    width: 100px;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 5px;
     position: fixed;
-    right: 20px;
-    top: 20%;
+    margin-left: 4rem;
+    margin-top: 4rem;
     z-index: 1000;
-   display: none;
-}
-
-#splusaime img {
-    border-radius: 50%;
-    width: 100%;
-    height: auto;
+    display: none;
 }
 
 #splus button {
