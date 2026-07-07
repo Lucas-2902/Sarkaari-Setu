@@ -673,3 +673,96 @@ footer::after{
     justify-content: center;
     gap: 25px;
 }
+
+.urgent-notification {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #ff3b30, #d60000);
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    animation: pulse 1.5s infinite;
+}
+
+.urgent-tag {
+    background: #fff;
+    color: #d60000;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.notification-text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.check-btn {
+    background: white;
+    color: #d60000;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.check-btn:hover {
+    background: #ffeaea;
+    transform: scale(1.05);
+    
+}
+
+#helping-guide{
+    transform: scale(1.05);
+        background: white;
+    color: #d60000;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#urgent-ai{
+    transform: scale(1.05);
+        background: white;
+    color: #d60000;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 12px rgba(255, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .urgent-notification {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .check-btn {
+        width: 100%;
+    }
+}
