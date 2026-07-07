@@ -1,1293 +1,1297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarkaari-Setu+</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="/_vercel/insights/script.js"></script>
-    <script async src="https://plausible.io/js/pa-Nsi2pwG9duO6N69C2skim.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sarkaari-Setu+</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="/_vercel/insights/script.js"></script>
+        <script async src="https://plausible.io/js/pa-Nsi2pwG9duO6N69C2skim.js"></script>
+        <script>
+          window.plausible=window.plausible||function(){(plausible.q=plausible.q||[])
+          .push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+          plausible.init()
+        </script>
+    </head>
+    <body>
+    <!-- Disclaimer Popup -->
+    <div id="disclaimerOverlay">
+        <div style="background-color: black;" id="disclaimerBox">
+            <h2>⚠️ Disclaimer</h2>
+    
+            <div class="disclaimer-content" style="color: white;">
+                <p>
+                    <strong>Important:</strong>
+                    This website is not a government website and does not represent any government entity. 
+                    We are a private platform that provides application formats, guides, official website links, and AI-assisted informational content. 
+                    Users must verify all information directly from the relevant official government websites before taking any action.
+                </p>
+                
+                <p>
+                    This website provides application formats, guides, government website links,
+                    and AI-assisted informational content for educational and informational purposes only.
+                </p>
+    
+                <p>
+                    We are not affiliated with or endorsed by any government department unless explicitly stated.
+                    Users should always verify information from the respective official government websites.
+                </p>
+    
+                <p>
+                    The "Last Updated" date is displayed where applicable. Government rules, procedures,
+                    forms, fees, and eligibility criteria may change at any time. If any information becomes
+                    outdated due to changes made by government authorities after the published update date,
+                    we shall not be held responsible.
+                </p>
+    
+                <p>
+                    AI-generated content may occasionally contain inaccuracies. Users are advised to verify
+                    important information through official sources before taking any action.
+                </p>
+    
+                <p>
+                    We do not accept responsibility for any errors, omissions, technical issues, losses,
+                    damages, or consequences resulting from the use of information available on this website.
+                </p>
+    
+                <p>
+                    By continuing to use this website, you acknowledge and accept this disclaimer.
+                </p>
+            </div>
+    
+            <button id="acceptDisclaimer">
+                I Understand & Continue
+            </button>
+        </div>
+    </div>
+    
+    <style>
+    #disclaimerOverlay{
+        position: fixed;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99999;
+        padding: 15px;
+        color: white;
+    }
+    
+    #disclaimerBox{
+        background: #fff;
+        width: 100%;
+        max-width: 700px;
+        max-height: 90vh;
+        overflow-y: auto;
+        border-radius: 16px;
+        padding: 25px;
+        box-sizing: border-box;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        font-family: Arial, sans-serif;
+    }
+    
+    #disclaimerBox h2{
+        margin-top: 0;
+        text-align: center;
+        color: #d32f2f;
+        font-size: 28px;
+    }
+    
+    .disclaimer-content{
+        line-height: 1.7;
+        color: #333;
+        font-size: 15px;
+    }
+    
+    #acceptDisclaimer{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        padding: 14px;
+        border: none;
+        border-radius: 10px;
+        background: #1976d2;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    #acceptDisclaimer:hover{
+        opacity: 0.9;
+    }
+    
+    
+    
+    </style>
+    
     <script>
-      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-      plausible.init()
+    
+    document.getElementById("acceptDisclaimer").addEventListener("click", function() {
+        document.getElementById("disclaimerOverlay").style.display = "none";
+    });
+    
     </script>
-</head>
-<body>
-<!-- Disclaimer Popup -->
-<div id="disclaimerOverlay">
-    <div style="background-color: black;" id="disclaimerBox">
-        <h2>⚠️ Disclaimer</h2>
-
-        <div class="disclaimer-content" style="color: white;">
-            <p>
-    <strong>Important:</strong> This website is not a government website and does not represent any government entity. We are a private platform that provides application formats, guides, official website links, and AI-assisted informational content. Users must verify all information directly from the relevant official government websites before taking any action.
-</p>
-            <p>
-                This website provides application formats, guides, government website links,
-                and AI-assisted informational content for educational and informational purposes only.
-            </p>
-
-            <p>
-                We are not affiliated with or endorsed by any government department unless explicitly stated.
-                Users should always verify information from the respective official government websites.
-            </p>
-
-            <p>
-                The "Last Updated" date is displayed where applicable. Government rules, procedures,
-                forms, fees, and eligibility criteria may change at any time. If any information becomes
-                outdated due to changes made by government authorities after the published update date,
-                we shall not be held responsible.
-            </p>
-
-            <p>
-                AI-generated content may occasionally contain inaccuracies. Users are advised to verify
-                important information through official sources before taking any action.
-            </p>
-
-            <p>
-                We do not accept responsibility for any errors, omissions, technical issues, losses,
-                damages, or consequences resulting from the use of information available on this website.
-            </p>
-
-            <p>
-                By continuing to use this website, you acknowledge and accept this disclaimer.
-            </p>
+    
+    <!-- Language Popup -->
+    
+    <div id="languagePopup">
+    <pre id="name">    <img src="logo.png" alt="logo" height="100px" width="100px"><br>Sarkaari-Setu+</pre>
+        <h1>भाषा चुनें / Select Language</h1>
+        <p>कृपया अपनी पसंदीदा भाषा चुनें / Please select your preferred language</p>
+    <div id="buttons">
+        <button id="hindiBtn" style="font-weight: lighter;">प्रवेश करें/हिंदी </button>
+        <button id="englishBtn" style="font-weight: lighter;"><b>Enter/<br>English</button>
+    </div>
+    </div>
+    
+    <!-- Website Content -->
+    <header>
+    
+        <div class="logo">
+            <i class="fa-regular fa-building"></i>
+            <h2><img src="logo.png" alt="logo" height="30px" width="30px">&nbsp;&nbsp;Sarkaari-Setu+</h2>
         </div>
-
-        <button id="acceptDisclaimer">
-            I Understand & Continue
+    <div id="splusaime">
+        <button style="height: 100px; width: 100px; border-radius: 50%; background-image: url('S+.png'); background-repeat: no-repeat; background-position: center; 
+            background-size: cover;" onclick="window.open('splus.html', '_blank', 'noopener,noreferrer')" id="ourAI"></button>
+    </div>
+    </header>
+    
+    <div class="tabs">
+    
+        <button class="active">
+            <i class="fa-regular fa-building"></i>
+            Board
         </button>
+    
+        <button id="Formatbtn">
+            <i class="fa-regular fa-file-lines"></i>
+            Formats and Guide
+        </button>
+    
     </div>
-</div>
-
-<style>
-#disclaimerOverlay{
-    position: fixed;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.75);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99999;
-    padding: 15px;
-    color: white;
-}
-
-#disclaimerBox{
-    background: #fff;
-    width: 100%;
-    max-width: 700px;
-    max-height: 90vh;
-    overflow-y: auto;
-    border-radius: 16px;
-    padding: 25px;
-    box-sizing: border-box;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-    font-family: Arial, sans-serif;
-}
-
-#disclaimerBox h2{
-    margin-top: 0;
-    text-align: center;
-    color: #d32f2f;
-    font-size: 28px;
-}
-
-.disclaimer-content{
-    line-height: 1.7;
-    color: #333;
-    font-size: 15px;
-}
-
-#acceptDisclaimer{
-    display: block;
-    width: 100%;
-    margin-top: 20px;
-    padding: 14px;
-    border: none;
-    border-radius: 10px;
-    background: #1976d2;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-#acceptDisclaimer:hover{
-    opacity: 0.9;
-}
-
-
-
-</style>
-
-<script>
-
-document.getElementById("acceptDisclaimer").addEventListener("click", function() {
-    document.getElementById("disclaimerOverlay").style.display = "none";
-});
-
-</script>
-
-<!-- Language Popup -->
-
-<div id="languagePopup">
-<pre id="name">    <img src="logo.png" alt="logo" height="100px" width="100px"><br>Sarkaari-Setu+</pre>
-    <h1>भाषा चुनें / Select Language</h1>
-    <p>कृपया अपनी पसंदीदा भाषा चुनें / Please select your preferred language</p>
-<div id="buttons">
-    <button id="hindiBtn" style="font-weight: lighter;">प्रवेश करें/हिंदी </button>
-    <button id="englishBtn" style="font-weight: lighter;"><b>Enter/<br>English</button>
-</div>
-</div>
-
-<!-- Website Content -->
-<header>
-
-    <div class="logo">
-        <i class="fa-regular fa-building"></i>
-        <h2><img src="logo.png" alt="logo" height="30px" width="30px">&nbsp;&nbsp;Sarkaari-Setu+</h2>
-    </div>
-<div id="splusaime">
-    <button style="height: 100px; width: 100px; border-radius: 50%; background-image: url('S+.png'); background-repeat: no-repeat; background-position: center; 
-        background-size: cover;" onclick="window.open('splus.html', '_blank', 'noopener,noreferrer')" id="ourAI"></button>
-    <p>Visit our AI↑↑</p>
-</div>
-</header>
-
-<div class="tabs">
-
-    <button class="active">
-        <i class="fa-regular fa-building"></i>
-        Board
-    </button>
-
-    <button id="Formatbtn">
-        <i class="fa-regular fa-file-lines"></i>
-        Formats and Guide
-    </button>
-
-</div>
-<div class="ALLboards"></div>
-<section class="container">
-
-    <div class="search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input id="searchInput" type="text" placeholder="Find Boards...">
-    </div>
-
-    <div class="filters">
-
-        <i class="fa-solid fa-filter filterIcon"></i>
-
-        <button class="selected">All Boards</button>
-
-    </div>
-
-    <div class="cards">
-
-        <div class="card">
-            <h2>Neet Result</h2>
-            <p>Guide to check your results of the NEET examination</p>
-
-            <span>
-                <i class="fa-regular fa-calendar"></i>
-                Last updated: 6 July 2026
-            </span>
-
-            <button onclick="window.open('neet-result.html', '_blank', 'noopener,noreferrer')">
-                Visit our guide
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
+    <div class="ALLboards"></div>
+    <section class="container">
+    
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="searchInput" type="text" placeholder="Find Boards...">
         </div>
-
-        <div class="card">
-
-            <h2>Central Board of Secondary Education (CBSE)</h2>
-
-            <p>
-               
-National-level education board for public and private schools
-            </p>
-
-            <span>
-                <i class="fa-regular fa-calendar"></i>
-                Last updated: 28 May 2026
-            </span>
-
-            <button onclick="window.open('https://www.cbse.gov.in', '_blank', 'noopener,noreferrer')">
-    वेबसाइट पर जाएं / Visit Website
-    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-</button>
-
+    
+        <div class="filters">
+    
+            <i class="fa-solid fa-filter filterIcon"></i>
+    
+            <button class="selected">All Boards</button>
+    
         </div>
-
-        <div class="card">
-
-            <h2>National Council of Educational Research and Training (NCERT)</h2>
-
-            <p>
-                Develops curriculum and educational materials.
-            </p>
-
-            <span>
-                <i class="fa-regular fa-calendar"></i>
-                Last updated: 27 May 2026
-            </span>
-
-            <button onclick="window.open('https://ncert.nic.in/textbook.php', '_blank', 'noopener,noreferrer')">
-                वेबसाइट पर जाएं/Visit Website
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-
-        </div>
-
-        <div class="card">
-
-            <h2>National Testing Agency (NTA)</h2>
-
-            <p>
-                Conducts entrance examinations for higher education institutions.
-            </p>
-
-            <span>
-                <i class="fa-regular fa-calendar"></i>
-                Last Update: 29 May 2026
-            </span>
-
-            <button onclick="window.open('https://neet.nta.nic.in', '_blank', 'noopener,noreferrer')">
-                वेबसाइट पर जाएं/Visit Website
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-
-        </div>
-        <div class="card">
-            <h2>Delhi Municipal Corporation(EDMC)</h2>
-
-            <p>Services for East Delhi</p>
-
-            <span>
-                <i class="fa-regular fa-calendar"></i>
-                Last Update: 29 May 2026
-            </span>
-
-            <button onclick="window.open('https://mcdonline.nic.in/portal', '_blank', 'noopener,noreferrer')">
-                वेबसाइट पर जाएं/Visit Wbesite
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-        </div>
-          <div class="card">
-            <h2>Right To Information (RTI)</h2>
-
-            <p>File RTI online</p>
-
-            <span>
-                <i class="fa-regular fa-calendar"></i>
-                Last Update: 29 May 2026
-            </span>
-
-            <button onclick="window.open('https://rtionline.gov.in', '_blank', 'noopener,noreferrer')">
-                वेबसाइट पर जाएं/Visit Website
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-        </div>
-          <div class="card">
-            <h2>University Grant Commision(UGC)</h2>
-
-            <p>For Universities</p>
-
-            <span>
-                <i class="fa-regular fa-calendar"></i>
-                Last Update: 29 May 2026
-            </span>
-
-            <button onclick="window.open('https://www.ugc.gov.in/', '_blank', 'noopener,noreferrer')">
-                वेबसाइट पर जाएं/Visit Website
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-        </div>
-         <div class="card">
-            <h2>National Institute of Open Schooling (NIOS)</h2>
-
-            <p>Free school education system for students</p>
-
-            <span>
-                <i class="fa-regular fa-calendar"></i>
-                Last Update: 29 May 2026
-            </span>
-
-            <button onclick="window.open('https://nios.ac.in', '_blank', 'noopener,noreferrer')">
-                वेबसाइट पर जाएं
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-        </div>
+    
+        <div class="cards">
+    
             <div class="card">
-            <h2>National Social Welfare Board</h2>
-
-            <p>Social Welfare Schemes and Programmes</p>
-
-            <span>
-                <i class="fa-regular fa-calendar"></i>
-                Last Update: 23 May 2026
-            </span>
-
-            <button onclick="window.open('https://socialjustice.gov.in/', '_blank', 'noopener,noreferrer')">
-                वेबसाइट पर जाएं/Visit Website
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-        </div>
+                <h2>Neet Result</h2>
+                <p>Guide to check your results of the NEET examination</p>
+    
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    Last updated: 6 July 2026
+                </span>
+    
+                <button onclick="window.open('neet-result.html', '_blank', 'noopener,noreferrer')">
+                    Visit our guide
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+    
+            <div class="card">
+    
+                <h2>Central Board of Secondary Education (CBSE)</h2>
+    
+                <p>
+                   
+    National-level education board for public and private schools
+                </p>
+    
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    Last updated: 28 May 2026
+                </span>
+    
+                <button onclick="window.open('https://www.cbse.gov.in', '_blank', 'noopener,noreferrer')">
+        वेबसाइट पर जाएं / Visit Website
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </button>
+    
+            </div>
+    
+            <div class="card">
+    
+                <h2>National Council of Educational Research and Training (NCERT)</h2>
+    
+                <p>
+                    Develops curriculum and educational materials.
+                </p>
+    
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    Last updated: 27 May 2026
+                </span>
+    
+                <button onclick="window.open('https://ncert.nic.in/textbook.php', '_blank', 'noopener,noreferrer')">
+                    वेबसाइट पर जाएं/Visit Website
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+    
+            </div>
+    
+            <div class="card">
+    
+                <h2>National Testing Agency (NTA)</h2>
+    
+                <p>
+                    Conducts entrance examinations for higher education institutions.
+                </p>
+    
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    Last Update: 29 May 2026
+                </span>
+    
+                <button onclick="window.open('https://neet.nta.nic.in', '_blank', 'noopener,noreferrer')">
+                    वेबसाइट पर जाएं/Visit Website
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+    
+            </div>
+            <div class="card">
+                <h2>Delhi Municipal Corporation(EDMC)</h2>
+    
+                <p>Services for East Delhi</p>
+    
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    Last Update: 29 May 2026
+                </span>
+    
+                <button onclick="window.open('https://mcdonline.nic.in/portal', '_blank', 'noopener,noreferrer')">
+                    वेबसाइट पर जाएं/Visit Wbesite
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+              <div class="card">
+                <h2>Right To Information (RTI)</h2>
+    
+                <p>File RTI online</p>
+    
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    Last Update: 29 May 2026
+                </span>
+    
+                <button onclick="window.open('https://rtionline.gov.in', '_blank', 'noopener,noreferrer')">
+                    वेबसाइट पर जाएं/Visit Website
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+              <div class="card">
+                <h2>University Grant Commision(UGC)</h2>
+    
+                <p>For Universities</p>
+    
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    Last Update: 29 May 2026
+                </span>
+    
+                <button onclick="window.open('https://www.ugc.gov.in/', '_blank', 'noopener,noreferrer')">
+                    वेबसाइट पर जाएं/Visit Website
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+             <div class="card">
+                <h2>National Institute of Open Schooling (NIOS)</h2>
+    
+                <p>Free school education system for students</p>
+    
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    Last Update: 29 May 2026
+                </span>
+    
+                <button onclick="window.open('https://nios.ac.in', '_blank', 'noopener,noreferrer')">
+                    वेबसाइट पर जाएं
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+                <div class="card">
+                <h2>National Social Welfare Board</h2>
+    
+                <p>Social Welfare Schemes and Programmes</p>
+    
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    Last Update: 23 May 2026
+                </span>
+    
+                <button onclick="window.open('https://socialjustice.gov.in/', '_blank', 'noopener,noreferrer')">
+                    वेबसाइट पर जाएं/Visit Website
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+              <div class="card">
+                <h2>Union Public Commision Selection(UPSC)</h2>
+    
+                <p>Central recruitment agency for civil services</p>
+    
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    Last Updated: 23 May 2026
+                </span>
+    
+                <button onclick="window.open('https://upsc.gov.in', '_blank', 'noopener,noreferrer')">
+                    वेबसाइट पर जाएं/Visit Website
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+             <div class="card">
+                <h2>Staff Selection Commision(SSC)</h2>
+    
+                <p>Recruitment for various Group B and C posts</p>
+    
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    Last Updated: 27 मई 2026
+                </span>
+    
+                <button onclick="window.open('https://ssc.gov.in', '_blank', 'noopener,noreferrer')">
+                    वेबसाइट पर जाएं/Visit Website
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
           <div class="card">
-            <h2>Union Public Commision Selection(UPSC)</h2>
-
-            <p>Central recruitment agency for civil services</p>
-
-            <span>
-                <i class="fa-regular fa-calendar"></i>
-                Last Updated: 23 May 2026
-            </span>
-
-            <button onclick="window.open('https://upsc.gov.in', '_blank', 'noopener,noreferrer')">
-                वेबसाइट पर जाएं/Visit Website
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-        </div>
-         <div class="card">
-            <h2>Staff Selection Commision(SSC)</h2>
-
-            <p>Recruitment for various Group B and C posts</p>
-
-            <span>
-                <i class="fa-regular fa-calendar"></i>
-                Last Updated: 27 मई 2026
-            </span>
-
-            <button onclick="window.open('https://ssc.gov.in', '_blank', 'noopener,noreferrer')">
-                वेबसाइट पर जाएं/Visit Website
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-          </div>
-      <div class="card">
-            <h2>All India Council for Technical Education (AICTE)</h2>
-
-            <p>Technical education regulatory body</p>
-
-            <span>
-                <i class="fa-regular fa-calendar"></i>
-                Last Updated: 26 May 2026
-            </span>
-
-            <button onclick="window.open('https://www.aicte-india.org', '_blank', 'noopener,noreferrer')">
-                वेबसाइट पर जाएं/Visit Website
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-          </div>  
-          <div class="card">
-            <h2>Economically Weaker Section (EWS) application</h2>
-
-            <p>EWS Certificate Application Portal</p>
-
-            <span>
-                <i class="fa-regular fa-calendar"></i>
-                Last Updated: 29 May 2026
-            </span>
-
-            <button onclick="window.open('https://ewsadmissions.delhi.gov.in/', '_blank', 'noopener,noreferrer')">
-                वेबसाइट पर जाएं/Visit Website
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </button>
-          </div>
-<!-- 1. Ministry of Education -->
-<div class="card-new">
-    <h2>Ministry of Education</h2>
-    <p>Official portal for all education related policies and schemes</p>
-    <span>
-        <i class="fa-regular fa-calendar"></i>
-        Last Update: 22 June 2026
-    </span>
-    <button onclick="window.open('https://ewsadmissions.delhi.gov.in/', '_blank', 'noopener,noreferrer')">
-        Visit Website
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-    </button>
-</div>
-
-<!-- 2. MyGov -->
-<div class="card-new">
-    <h2>MyGov</h2>
-    <p>Platform for citizen engagement, tasks, and government schemes</p>
-    <span>
-        <i class="fa-regular fa-calendar"></i>
-        Last Update: 22 June 2026
-    </span>
-    <button onclick="window.open('https://www.mygov.in', '_blank', 'noopener,noreferrer')">
-        Visit Website
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-    </button>
-</div>
-
-<!-- 3. myScheme -->
-<div class="card-new">
-    <h2>myScheme</h2>
-    <p>Find and apply for government welfare schemes easily</p>
-    <span>
-        <i class="fa-regular fa-calendar"></i>
-        Last Update: 22 June 2026
-    </span>
-    <button onclick="window.open('https://www.myscheme.gov.in', '_blank', 'noopener,noreferrer')">
-        Visit Website
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-    </button>
-</div>
-
-<!-- 4. UMANG -->
-<div class="card-new">
-    <h2>UMANG</h2>
-    <p>One app for 1000+ central and state government services</p>
-    <span>
-        <i class="fa-regular fa-calendar"></i>
-        Last Update: 22 June 2026
-    </span>
-    <button onclick="window.open('https://web.umang.gov.in', '_blank', 'noopener,noreferrer')">
-        Visit Website
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-    </button>
-</div>
-
-<!-- 5. DigiLocker -->
-<div class="card-new">
-    <h2>DigiLocker</h2>
-    <p>Secure digital document wallet for certificates and IDs</p>
-    <span>
-        <i class="fa-regular fa-calendar"></i>
-        Last Update: 22 June 2026
-    </span>
-    <button onclick="window.open('https://www.digilocker.gov.in', '_blank', 'noopener,noreferrer')">
-        Visit Website
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-    </button>
-</div>
-
-<!-- 6. UPSC -->
-<div class="card-new">
-    <h2>Union Public Service Commission (UPSC)</h2>
-    <p>Civil Services Examination and other central government recruitments</p>
-    <span>
-        <i class="fa-regular fa-calendar"></i>
-        Last Update: 22 June 2026
-    </span>
-    <button onclick="window.open('https://upsc.gov.in', '_blank', 'noopener,noreferrer')">
-        Visit Website
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-    </button>
-</div>
-
-<!-- 7. Staff Selection Commission (SSC) -->
-<div class="card-new">
-    <h2>Staff Selection Commission (SSC)</h2>
-    <p>Recruitment for Group B & C posts in central government</p>
-    <span>
-        <i class="fa-regular fa-calendar"></i>
-        Last Update: 22 June 2026
-    </span>
-    <button onclick="window.open('https://ssc.gov.in', '_blank', 'noopener,noreferrer')">
-        Visit Website
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-    </button>
-</div>
-
-<!-- 8. GST Portal -->
-<div class="card-new">
-    <h2>GST Portal</h2>
-    <p>Goods and Services Tax registration and compliance</p>
-    <span>
-        <i class="fa-regular fa-calendar"></i>
-        Last Update: 22 June 2026
-    </span>
-    <button onclick="window.open('https://www.gst.gov.in/help/returns', '_blank', 'noopener,noreferrer')">
-        Visit Website
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-    </button>
-</div>
-
-<!-- 9. Passport Seva -->
-<div class="card-new">
-    <h2>Passport Seva</h2>
-    <p>Apply for new, renewal or re-issue of Indian Passport</p>
-    <span>
-        <i class="fa-regular fa-calendar"></i>
-        Last Update: 22 June 2026
-    </span>
-    <button onclick="window.open('https://www.passportindia.gov.in/psp', '_blank', 'noopener,noreferrer')">
-        Visit Website
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-    </button>
-</div>
-
-<!-- 10. EPFO -->
-<div class="card-new">
-    <h2>Employees' Provident Fund Organisation (EPFO)</h2>
-    <p>PF account, claims, pension and online services</p>
-    <span>
-        <i class="fa-regular fa-calendar"></i>
-        Last Update: 22 June 2026
-    </span>
-    <button onclick="window.open('https://www.epfindia.gov.in/site_en/', '_blank', 'noopener,noreferrer')">
-        Visit Website
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-    </button>
-</div>
+                <h2>All India Council for Technical Education (AICTE)</h2>
+    
+                <p>Technical education regulatory body</p>
+    
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    Last Updated: 26 May 2026
+                </span>
+    
+                <button onclick="window.open('https://www.aicte-india.org', '_blank', 'noopener,noreferrer')">
+                    वेबसाइट पर जाएं/Visit Website
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>  
+              <div class="card">
+                <h2>Economically Weaker Section (EWS) application</h2>
+    
+                <p>EWS Certificate Application Portal</p>
+    
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    Last Updated: 29 May 2026
+                </span>
+    
+                <button onclick="window.open('https://ewsadmissions.delhi.gov.in/', '_blank', 'noopener,noreferrer')">
+                    वेबसाइट पर जाएं/Visit Website
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+    <!-- 1. Ministry of Education -->
+    <div class="card-new">
+        <h2>Ministry of Education</h2>
+        <p>Official portal for all education related policies and schemes</p>
+        <span>
+            <i class="fa-regular fa-calendar"></i>
+            Last Update: 22 June 2026
+        </span>
+        <button onclick="window.open('https://ewsadmissions.delhi.gov.in/', '_blank', 'noopener,noreferrer')">
+            Visit Website
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
     </div>
-  <br><br><br><br><br><br>
-<div id="newlinks">
+    
+    <!-- 2. MyGov -->
+    <div class="card-new">
+        <h2>MyGov</h2>
+        <p>Platform for citizen engagement, tasks, and government schemes</p>
+        <span>
+            <i class="fa-regular fa-calendar"></i>
+            Last Update: 22 June 2026
+        </span>
+        <button onclick="window.open('https://www.mygov.in', '_blank', 'noopener,noreferrer')">
+            Visit Website
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+    </div>
+    
+    <!-- 3. myScheme -->
+    <div class="card-new">
+        <h2>myScheme</h2>
+        <p>Find and apply for government welfare schemes easily</p>
+        <span>
+            <i class="fa-regular fa-calendar"></i>
+            Last Update: 22 June 2026
+        </span>
+        <button onclick="window.open('https://www.myscheme.gov.in', '_blank', 'noopener,noreferrer')">
+            Visit Website
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+    </div>
+    
+    <!-- 4. UMANG -->
+    <div class="card-new">
+        <h2>UMANG</h2>
+        <p>One app for 1000+ central and state government services</p>
+        <span>
+            <i class="fa-regular fa-calendar"></i>
+            Last Update: 22 June 2026
+        </span>
+        <button onclick="window.open('https://web.umang.gov.in', '_blank', 'noopener,noreferrer')">
+            Visit Website
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+    </div>
+    
+    <!-- 5. DigiLocker -->
+    <div class="card-new">
+        <h2>DigiLocker</h2>
+        <p>Secure digital document wallet for certificates and IDs</p>
+        <span>
+            <i class="fa-regular fa-calendar"></i>
+            Last Update: 22 June 2026
+        </span>
+        <button onclick="window.open('https://www.digilocker.gov.in', '_blank', 'noopener,noreferrer')">
+            Visit Website
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+    </div>
+    
+    <!-- 6. UPSC -->
+    <div class="card-new">
+        <h2>Union Public Service Commission (UPSC)</h2>
+        <p>Civil Services Examination and other central government recruitments</p>
+        <span>
+            <i class="fa-regular fa-calendar"></i>
+            Last Update: 22 June 2026
+        </span>
+        <button onclick="window.open('https://upsc.gov.in', '_blank', 'noopener,noreferrer')">
+            Visit Website
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+    </div>
+    
+    <!-- 7. Staff Selection Commission (SSC) -->
+    <div class="card-new">
+        <h2>Staff Selection Commission (SSC)</h2>
+        <p>Recruitment for Group B & C posts in central government</p>
+        <span>
+            <i class="fa-regular fa-calendar"></i>
+            Last Update: 22 June 2026
+        </span>
+        <button onclick="window.open('https://ssc.gov.in', '_blank', 'noopener,noreferrer')">
+            Visit Website
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+    </div>
+    
+    <!-- 8. GST Portal -->
+    <div class="card-new">
+        <h2>GST Portal</h2>
+        <p>Goods and Services Tax registration and compliance</p>
+        <span>
+            <i class="fa-regular fa-calendar"></i>
+            Last Update: 22 June 2026
+        </span>
+        <button onclick="window.open('https://www.gst.gov.in/help/returns', '_blank', 'noopener,noreferrer')">
+            Visit Website
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+    </div>
+    
+    <!-- 9. Passport Seva -->
+    <div class="card-new">
+        <h2>Passport Seva</h2>
+        <p>Apply for new, renewal or re-issue of Indian Passport</p>
+        <span>
+            <i class="fa-regular fa-calendar"></i>
+            Last Update: 22 June 2026
+        </span>
+        <button onclick="window.open('https://www.passportindia.gov.in/psp', '_blank', 'noopener,noreferrer')">
+            Visit Website
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+    </div>
+    
+    <!-- 10. EPFO -->
+    <div class="card-new">
+        <h2>Employees' Provident Fund Organisation (EPFO)</h2>
+        <p>PF account, claims, pension and online services</p>
+        <span>
+            <i class="fa-regular fa-calendar"></i>
+            Last Update: 22 June 2026
+        </span>
+        <button onclick="window.open('https://www.epfindia.gov.in/site_en/', '_blank', 'noopener,noreferrer')">
+            Visit Website
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+    </div>
+        </div>
+      <br><br><br><br><br><br>
+    <div id="newlinks">
+        <div class="card">
+        <div class="card-content">
+            <h3>mAadhaar</h3>
+            <span class="category">Citizen Service</span>
+            <p>Download and manage your Aadhaar digitally through the official app.</p>
+            <button class="download-btn" onclick="window.open('https://myaadhaar.uidai.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
+    </div>
+    
     <div class="card">
-    <div class="card-content">
-        <h3>mAadhaar</h3>
-        <span class="category">Citizen Service</span>
-        <p>Download and manage your Aadhaar digitally through the official app.</p>
-        <button class="download-btn" onclick="window.open('https://myaadhaar.uidai.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+        <div class="card-content">
+            <h3>Voter ID Services</h3>
+            <span class="category">Election</span>
+            <p>Apply for a new Voter ID, update details and download your voter card.</p>
+            <button class="download-btn" onclick="window.open('https://voters.eci.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>Voter ID Services</h3>
-        <span class="category">Election</span>
-        <p>Apply for a new Voter ID, update details and download your voter card.</p>
-        <button class="download-btn" onclick="window.open('https://voters.eci.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>eShram Portal</h3>
+            <span class="category">Employment</span>
+            <p>Register as an unorganized worker and receive government benefits.</p>
+            <button class="download-btn" onclick="window.open('https://eshram.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>eShram Portal</h3>
-        <span class="category">Employment</span>
-        <p>Register as an unorganized worker and receive government benefits.</p>
-        <button class="download-btn" onclick="window.open('https://eshram.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>Udyam Registration</h3>
+            <span class="category">Business</span>
+            <p>Register your Micro, Small and Medium Enterprise (MSME).</p>
+            <button class="download-btn" onclick="window.open('https://udyamregistration.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>Udyam Registration</h3>
-        <span class="category">Business</span>
-        <p>Register your Micro, Small and Medium Enterprise (MSME).</p>
-        <button class="download-btn" onclick="window.open('https://udyamregistration.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>Startup India</h3>
+            <span class="category">Business</span>
+            <p>Register your startup and access government support programs.</p>
+            <button class="download-btn" onclick="window.open('https://www.startupindia.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>Startup India</h3>
-        <span class="category">Business</span>
-        <p>Register your startup and access government support programs.</p>
-        <button class="download-btn" onclick="window.open('https://www.startupindia.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>GeM Portal</h3>
+            <span class="category">Business</span>
+            <p>Government e-Marketplace for procurement of goods and services.</p>
+            <button class="download-btn" onclick="window.open('https://gem.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>GeM Portal</h3>
-        <span class="category">Business</span>
-        <p>Government e-Marketplace for procurement of goods and services.</p>
-        <button class="download-btn" onclick="window.open('https://gem.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>PM Mudra Yojana</h3>
+            <span class="category">Finance</span>
+            <p>Apply for business loans under the Pradhan Mantri Mudra Yojana.</p>
+            <button class="download-btn" onclick="window.open('https://www.mudra.org.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>PM Mudra Yojana</h3>
-        <span class="category">Finance</span>
-        <p>Apply for business loans under the Pradhan Mantri Mudra Yojana.</p>
-        <button class="download-btn" onclick="window.open('https://www.mudra.org.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>Atal Pension Yojana</h3>
+            <span class="category">Pension</span>
+            <p>Join the government-backed pension scheme for retirement security.</p>
+            <button class="download-btn" onclick="window.open('https://www.npscra.nsdl.co.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>Atal Pension Yojana</h3>
-        <span class="category">Pension</span>
-        <p>Join the government-backed pension scheme for retirement security.</p>
-        <button class="download-btn" onclick="window.open('https://www.npscra.nsdl.co.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>National Pension System (NPS)</h3>
+            <span class="category">Pension</span>
+            <p>Open and manage your National Pension System account.</p>
+            <button class="download-btn" onclick="window.open('https://enps.nsdl.com/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>National Pension System (NPS)</h3>
-        <span class="category">Pension</span>
-        <p>Open and manage your National Pension System account.</p>
-        <button class="download-btn" onclick="window.open('https://enps.nsdl.com/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>Jeevan Pramaan</h3>
+            <span class="category">Pension</span>
+            <p>Generate a Digital Life Certificate for pensioners.</p>
+            <button class="download-btn" onclick="window.open('https://jeevanpramaan.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>Jeevan Pramaan</h3>
-        <span class="category">Pension</span>
-        <p>Generate a Digital Life Certificate for pensioners.</p>
-        <button class="download-btn" onclick="window.open('https://jeevanpramaan.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>eCourts Services</h3>
+            <span class="category">Judiciary</span>
+            <p>Check case status, orders, cause lists and court information.</p>
+            <button class="download-btn" onclick="window.open('https://ecourts.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>eCourts Services</h3>
-        <span class="category">Judiciary</span>
-        <p>Check case status, orders, cause lists and court information.</p>
-        <button class="download-btn" onclick="window.open('https://ecourts.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>Cyber Crime Portal</h3>
+            <span class="category">Safety</span>
+            <p>Report cyber crimes and online fraud incidents.</p>
+            <button class="download-btn" onclick="window.open('https://cybercrime.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>Cyber Crime Portal</h3>
-        <span class="category">Safety</span>
-        <p>Report cyber crimes and online fraud incidents.</p>
-        <button class="download-btn" onclick="window.open('https://cybercrime.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>PM Fasal Bima Yojana</h3>
+            <span class="category">Agriculture</span>
+            <p>Crop insurance scheme for Indian farmers.</p>
+            <button class="download-btn" onclick="window.open('https://pmfby.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>PM Fasal Bima Yojana</h3>
-        <span class="category">Agriculture</span>
-        <p>Crop insurance scheme for Indian farmers.</p>
-        <button class="download-btn" onclick="window.open('https://pmfby.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>eNAM</h3>
+            <span class="category">Agriculture</span>
+            <p>National Agriculture Market for online trading of farm produce.</p>
+            <button class="download-btn" onclick="window.open('https://enam.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>eNAM</h3>
-        <span class="category">Agriculture</span>
-        <p>National Agriculture Market for online trading of farm produce.</p>
-        <button class="download-btn" onclick="window.open('https://enam.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>Jan Aushadhi</h3>
+            <span class="category">Healthcare</span>
+            <p>Find affordable generic medicines through Jan Aushadhi Kendras.</p>
+            <button class="download-btn" onclick="window.open('https://janaushadhi.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>Jan Aushadhi</h3>
-        <span class="category">Healthcare</span>
-        <p>Find affordable generic medicines through Jan Aushadhi Kendras.</p>
-        <button class="download-btn" onclick="window.open('https://janaushadhi.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>ABHA Health ID</h3>
+            <span class="category">Healthcare</span>
+            <p>Create your Ayushman Bharat Health Account (ABHA).</p>
+            <button class="download-btn" onclick="window.open('https://abha.abdm.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>ABHA Health ID</h3>
-        <span class="category">Healthcare</span>
-        <p>Create your Ayushman Bharat Health Account (ABHA).</p>
-        <button class="download-btn" onclick="window.open('https://abha.abdm.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>eSanjeevani</h3>
+            <span class="category">Healthcare</span>
+            <p>Consult doctors online through the Government telemedicine service.</p>
+            <button class="download-btn" onclick="window.open('https://esanjeevani.mohfw.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>eSanjeevani</h3>
-        <span class="category">Healthcare</span>
-        <p>Consult doctors online through the Government telemedicine service.</p>
-        <button class="download-btn" onclick="window.open('https://esanjeevani.mohfw.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>CoWIN</h3>
+            <span class="category">Healthcare</span>
+            <p>Access vaccination certificates and related health services.</p>
+            <button class="download-btn" onclick="window.open('https://www.cowin.gov.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>CoWIN</h3>
-        <span class="category">Healthcare</span>
-        <p>Access vaccination certificates and related health services.</p>
-        <button class="download-btn" onclick="window.open('https://www.cowin.gov.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>IRCTC</h3>
+            <span class="category">Travel</span>
+            <p>Book railway tickets and manage train reservations online.</p>
+            <button class="download-btn" onclick="window.open('https://www.irctc.co.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>IRCTC</h3>
-        <span class="category">Travel</span>
-        <p>Book railway tickets and manage train reservations online.</p>
-        <button class="download-btn" onclick="window.open('https://www.irctc.co.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
+    
+    <div class="card">
+        <div class="card-content">
+            <h3>FASTag</h3>
+            <span class="category">Transport</span>
+            <p>Recharge and manage your FASTag account for toll payments.</p>
+            <button class="download-btn" onclick="window.open('https://ihmcl.co.in/', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-globe"></i> Visit Website
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="card">
-    <div class="card-content">
-        <h3>FASTag</h3>
-        <span class="category">Transport</span>
-        <p>Recharge and manage your FASTag account for toll payments.</p>
-        <button class="download-btn" onclick="window.open('https://ihmcl.co.in/', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-globe"></i> Visit Website
-        </button>
     </div>
-</div>
-</div>
-</section>
-</div >
-<!--the Application Formats-->
-<div class="ApplicationS">
-<div class="container">
-
-
-    <!-- Search Box -->
-    <div class="search-boxtwo" >
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Search application formats..." id="formatsearch">
-    </div><br><br><br><br><br>
-
-    <p class="count" style="color: #555555;font-weight: bold;">Showing 12 formats</p>
-
-    <!-- Cards -->  
-    <div class="cards-grid">
-
-        <div class="card">
+    </section>
+    </div >
+    <!--the Application Formats-->
+    <div class="ApplicationS">
+    <div class="container">
+    
+    
+        <!-- Search Box -->
+        <div class="search-boxtwo" >
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search application formats..." id="formatsearch">
+        </div><br><br><br><br><br>
+    
+        <p class="count" style="color: #555555;font-weight: bold;">Showing 12 formats</p>
+    
+        <!-- Cards -->  
+        <div class="cards-grid">
+    
+            <div class="card">
+           
+    
+                <div class="card-content">
+                    <h3 id="formatsh">Birth Certificate Application</h3>
+                    <span class="category" id="formatsspan">Civic Services</span>
+                    <p id="fp">Application format for obtaining birth certificate</p>
+    
+                    <button class="download-btn" onclick="window.open('birthcertificateformat.html', '_blank', 'noopener,noreferrer')">
+                        <i class="fas fa-download"></i>
+                        See Format
+                    </button>
+                </div>
+            </div>
+    
+            <div class="card">
+         
+    
+                <div class="card-content">
+                    <h3>Income Certificate Application</h3>
+                    <span class="category">Civic Services</span>
+                    <p>Application format for income certificate</p>
+    
+                    <button class="download-btn" onclick="window.open('incomecert.html', '_blank', 'noopener,noreferrer')">
+                        <i class="fas fa-download"></i>
+                        Download Format
+                    </button>
+                </div>
+            </div>
+    
+            <div class="card">
+         
+    
+                <div class="card-content">
+                    <h3>Domicile Certificate Application</h3>
+                    <span class="category">Civic Services</span>
+                    <p>Application format for domicile certificate</p>
+    
+                    <button class="download-btn" onclick="window.open('domicilecertificate.html', '_blank', 'noopener,noreferrer')">
+                        <i class="fas fa-download"></i>
+                        Download Format
+                    </button>
+                </div>
+            </div>
+    
+      
+    <DIV class="card">
+                <div class="card-content">
+                    <h3>RTI Application Form</h3>
+                    <span class="category">Information</span>
+                    <p>Right to Information application format</p>
+    
+                    <button class="download-btn" onclick="window.open('rti.html', '_blank', 'noopener,noreferrer')">
+                        <i class="fas fa-download"></i>
+                        Download Format
+                    </button>
+                </div>
+            </div>
+    <!-- EWS Card -->
+    <div class="card">
+    
+    
+        <div class="card-content">
+            <h3>EWS Guide</h3>
+            <span class="category">Citizen Service</span>
+            <p>Learn how to apply for an EWS Certificate.</p>
+    
+            <button class="download-btn" onclick="window.open('ews.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i>
+                Download Guide
+            </button>
+        </div>
+    </div>
+    
+    <!-- EDMC Card -->
+    <div class="card">
+    
+    
+        <div class="card-content">
+            <h3>EDMC Guide</h3>
+            <span class="category">Government Service</span>
+            <p>Step-by-step guide for EDMC-related services.</p>
+    
+            <button class="download-btn" onclick="window.open('edmc.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i>
+                Download Guide
+            </button>
+        </div>
+    </div>
+    
+    <!-- UGC Card -->
+    <div class="card">
+    
+    
+        <div class="card-content">
+            <h3>UGC Guide</h3>
+            <span class="category">Education</span>
+            <p>Information and application guide for UGC services.</p>
+    
+            <button class="download-btn" onclick="window.open('domicilecertificate.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i>
+                Download Guide
+            </button>
+        </div>
+    </div>
+    <!-- Card 19 -->
+    <div class="card">
        
-
-            <div class="card-content">
-                <h3 id="formatsh">Birth Certificate Application</h3>
-                <span class="category" id="formatsspan">Civic Services</span>
-                <p id="fp">Application format for obtaining birth certificate</p>
-
-                <button class="download-btn" onclick="window.open('birthcertificateformat.html', '_blank', 'noopener,noreferrer')">
-                    <i class="fas fa-download"></i>
-                    See Format
-                </button>
-            </div>
+        <div class="card-content">
+            <h3>Death Certificate Application</h3>
+            <span class="category">Citizen Service</span>
+            <p>Application format for obtaining a death certificate.</p>
+            <button class="download-btn" onclick="window.open('deathcert.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
         </div>
-
-        <div class="card">
-     
-
-            <div class="card-content">
-                <h3>Income Certificate Application</h3>
-                <span class="category">Civic Services</span>
-                <p>Application format for income certificate</p>
-
-                <button class="download-btn" onclick="window.open('incomecert.html', '_blank', 'noopener,noreferrer')">
-                    <i class="fas fa-download"></i>
-                    Download Format
-                </button>
-            </div>
-        </div>
-
-        <div class="card">
-     
-
-            <div class="card-content">
-                <h3>Domicile Certificate Application</h3>
-                <span class="category">Civic Services</span>
-                <p>Application format for domicile certificate</p>
-
-                <button class="download-btn" onclick="window.open('domicilecertificate.html', '_blank', 'noopener,noreferrer')">
-                    <i class="fas fa-download"></i>
-                    Download Format
-                </button>
-            </div>
-        </div>
-
-  
-<DIV class="card">
-            <div class="card-content">
-                <h3>RTI Application Form</h3>
-                <span class="category">Information</span>
-                <p>Right to Information application format</p>
-
-                <button class="download-btn" onclick="window.open('rti.html', '_blank', 'noopener,noreferrer')">
-                    <i class="fas fa-download"></i>
-                    Download Format
-                </button>
-            </div>
-        </div>
-<!-- EWS Card -->
-<div class="card">
-
-
-    <div class="card-content">
-        <h3>EWS Guide</h3>
-        <span class="category">Citizen Service</span>
-        <p>Learn how to apply for an EWS Certificate.</p>
-
-        <button class="download-btn" onclick="window.open('ews.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i>
-            Download Guide
-        </button>
     </div>
-</div>
-
-<!-- EDMC Card -->
-<div class="card">
-
-
-    <div class="card-content">
-        <h3>EDMC Guide</h3>
-        <span class="category">Government Service</span>
-        <p>Step-by-step guide for EDMC-related services.</p>
-
-        <button class="download-btn" onclick="window.open('edmc.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i>
-            Download Guide
-        </button>
-    </div>
-</div>
-
-<!-- UGC Card -->
-<div class="card">
-
-
-    <div class="card-content">
-        <h3>UGC Guide</h3>
-        <span class="category">Education</span>
-        <p>Information and application guide for UGC services.</p>
-
-        <button class="download-btn" onclick="window.open('domicilecertificate.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i>
-            Download Guide
-        </button>
-    </div>
-</div>
-<!-- Card 19 -->
-<div class="card">
-   
-    <div class="card-content">
-        <h3>Death Certificate Application</h3>
-        <span class="category">Citizen Service</span>
-        <p>Application format for obtaining a death certificate.</p>
-        <button class="download-btn" onclick="window.open('deathcert.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 20 -->
-<div class="card">
-   
-    <div class="card-content">
-        <h3>Marriage Registration Application</h3>
-        <span class="category">Citizen Service</span>
-        <p>Application format for marriage registration.</p>
-        <button class="download-btn" onclick="window.open('marriagecert.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 21 -->
-<div class="card">
-   
-    <div class="card-content">
-        <h3>Property Tax Mutation Application</h3>
-        <span class="category">Property Service</span>
-        <p>Application format for property tax mutation.</p>
-        <button class="download-btn" onclick="window.open('propertytaxmut.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 22 -->
-<div class="card">
     
-    <div class="card-content">
-        <h3>Water Connection Application</h3>
-        <span class="category">Utility Service</span>
-        <p>Application format for a new water connection.</p>
-        <button class="download-btn" onclick="window.open('waterconnectionapplication.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
+    <!-- Card 20 -->
+    <div class="card">
+       
+        <div class="card-content">
+            <h3>Marriage Registration Application</h3>
+            <span class="category">Citizen Service</span>
+            <p>Application format for marriage registration.</p>
+            <button class="download-btn" onclick="window.open('marriagecert.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
     </div>
-</div>
-
-<!-- Card 23 -->
-<div class="card">
-  
-    <div class="card-content">
-        <h3>Sewer Connection Application</h3>
-        <span class="category">Utility Service</span>
-        <p>Application format for a sewer connection.</p>
-        <button class="download-btn" onclick="window.open('sewerconnectionapplication.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 24 -->
-<div class="card">
     
-    <div class="card-content">
-        <h3>Trade License Application</h3>
-        <span class="category">Business Service</span>
-        <p>Application format for a trade license.</p>
-        <button class="download-btn" onclick="window.open('tradelicenseapplication.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
+    <!-- Card 21 -->
+    <div class="card">
+       
+        <div class="card-content">
+            <h3>Property Tax Mutation Application</h3>
+            <span class="category">Property Service</span>
+            <p>Application format for property tax mutation.</p>
+            <button class="download-btn" onclick="window.open('propertytaxmut.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
     </div>
-</div>
-
-<!-- Card 25 -->
-<div class="card">
-   
-    <div class="card-content">
-        <h3>Health Trade License Application</h3>
-        <span class="category">Business Service</span>
-        <p>Application format for a health trade license.</p>
-        <button class="download-btn" onclick="window.open('health-trade-license.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 26 -->
-<div class="card">
-  
-    <div class="card-content">
-        <h3>Building Plan Approval Application</h3>
-        <span class="category">Building Service</span>
-        <p>Application format for building plan approval.</p>
-        <button class="download-btn" onclick="window.open('building-plan.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 27 -->
-<div class="card">
- 
-    <div class="card-content">
-        <h3>Property Transfer Application</h3>
-        <span class="category">Property Service</span>
-        <p>Application format for property transfer/mutation.</p>
-        <button class="download-btn" onclick="window.open('property-transfer.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 28 -->
-<div class="card">
- 
-    <div class="card-content">
-        <h3>House Tax Correction Application</h3>
-        <span class="category">Property Service</span>
-        <p>Application format for house tax correction.</p>
-        <button class="download-btn" onclick="window.open('house-tax-correction.html', '_blank', 'noopener,noreferrer')"">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 29 -->
-<div class="card">
-
-    <div class="card-content">
-        <h3>Property Tax Rebate Application</h3>
-        <span class="category">Property Service</span>
-        <p>Application format for property tax rebate.</p>
-        <button class="download-btn" onclick="window.open('property-tax-rebate.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 30 -->
-<div class="card">
-
-    <div class="card-content">
-        <h3>Encroachment Complaint</h3>
-        <span class="category">Complaint</span>
-        <p>Application format to report encroachment.</p>
-        <button class="download-btn" onclick="window.open('enroachment.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 31 -->
-<div class="card">
-
-    <div class="card-content">
-        <h3>Sanitation Complaint</h3>
-        <span class="category">Complaint</span>
-        <p>Application format for sanitation complaints.</p>
-        <button class="download-btn" onclick="window.location.href='sanitation.html'">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 32 -->
-<div class="card">
-
-    <div class="card-content">
-        <h3>Street Light Complaint</h3>
-        <span class="category">Complaint</span>
-        <p>Application format for street light complaints.</p>
-        <button class="download-btn" onclick="window.open('street-light.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 33 -->
-<div class="card">
-
-    <div class="card-content">
-        <h3>Garbage Collection Complaint</h3>
-        <span class="category">Complaint</span>
-        <p>Application format for garbage collection issues.</p>
-        <button class="download-btn" onclick="window.open('garbage.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 34 -->
-<div class="card">
-  
-    <div class="card-content">
-        <h3>Stray Animal Complaint</h3>
-        <span class="category">Complaint</span>
-        <p>Application format for stray animal complaints.</p>
-        <button class="download-btn" onclick="window.open('stray-animal.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 35 -->
-<div class="card">
-   
-    <div class="card-content">
-        <h3>Park Maintenance Complaint</h3>
-        <span class="category">Complaint</span>
-        <p>Application format for park maintenance requests.</p>
-        <button class="download-btn" onclick="window.open('park-maintenance.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 36 -->
-<div class="card">
-
-    <div class="card-content">
-        <h3>Road Repair Complaint</h3>
-        <span class="category">Complaint</span>
-        <p>Application format for road repair complaints.</p>
-        <button class="download-btn" onclick="window.open('road-repair.html', '_blank', 'noopener,noreferrer')"">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 37 -->
-<div class="card">
- 
-    <div class="card-content">
-        <h3>Drain Cleaning Complaint</h3>
-        <span class="category">Complaint</span>
-        <p>Application format for drain cleaning requests.</p>
-        <button class="download-btn" onclick="window.open('drain-cleaning.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 38 -->
-<div class="card">
-   
-    <div class="card-content">
-        <h3>Illegal Construction Complaint</h3>
-        <span class="category">Complaint</span>
-        <p>Application format to report illegal construction.</p>
-        <button class="download-btn" onclick="window.open('illegal-construction.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 39 -->
-<div class="card">
-   
-    <div class="card-content">
-        <h3>Shop Registration Application</h3>
-        <span class="category">Business Service</span>
-        <p>Application format for shop registration.</p>
-        <button class="download-btn" onclick="window.open('shop-registration.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 40 -->
-<div class="card">
-   
-    <div class="card-content">
-        <h3>Hawker/Vendor License Application</h3>
-        <span class="category">Business Service</span>
-        <p>Application format for hawker/vendor license.</p>
-        <button class="download-btn" onclick="window.open('hawker-license.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 41 -->
-<div class="card">
-  
-    <div class="card-content">
-        <h3>Advertisement Permission Application</h3>
-        <span class="category">Business Service</span>
-        <p>Application format for advertisement permission.</p>
-        <button class="download-btn" onclick="window.open('advertisement.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 42 -->
-<div class="card">
- 
-    <div class="card-content">
-        <h3>Community Hall Booking</h3>
-        <span class="category">Public Service</span>
-        <p>Application format for community hall booking.</p>
-        <button class="download-btn" onclick="window.open('community-hall.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 43 -->
-<div class="card">
-
-    <div class="card-content">
-        <h3>Water Tanker Booking</h3>
-        <span class="category">Utility Service</span>
-        <p>Application format for water tanker booking.</p>
-        <button class="download-btn" onclick="window.open('water-tanker.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 44 -->
-<div class="card">
-
-    <div class="card-content">
-        <h3>RTI Application</h3>
-        <span class="category">Information</span>
-        <p>Application format under the Right to Information Act.</p>
-        <button class="download-btn" onclick="window.open('rti.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 45 -->
-<div class="card">
-
-    <div class="card-content">
-        <h3>Grievance/Complaint Application</h3>
-        <span class="category">Complaint</span>
-        <p>General grievance and complaint application format.</p>
-        <button class="download-btn" onclick="window.open('grievance.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
-    </div>
-</div>
-
-<!-- Card 46 -->
-<div class="card">
     
-    <div class="card-content">
-        <h3>Name Correction in Birth Certificate</h3>
-        <span class="category">Citizen Service</span>
-        <p>Application format for name correction in birth certificate.</p>
-        <button class="download-btn" onclick="window.open('birth-name-correction.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
+    <!-- Card 22 -->
+    <div class="card">
+        
+        <div class="card-content">
+            <h3>Water Connection Application</h3>
+            <span class="category">Utility Service</span>
+            <p>Application format for a new water connection.</p>
+            <button class="download-btn" onclick="window.open('waterconnectionapplication.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
     </div>
-</div>
-
-<!-- Card 47 -->
-<div class="card">
-
-    <div class="card-content" >
-        <h3>Address Correction in Municipal Records</h3>
-        <span class="category">Citizen Service</span>
-        <p>Application format for address correction in municipal records.</p>
-        <button class="download-btn" onclick="window.open('address-correction.html', '_blank', 'noopener,noreferrer')">
-            <i class="fas fa-download"></i> View Format
-        </button>
+    
+    <!-- Card 23 -->
+    <div class="card">
+      
+        <div class="card-content">
+            <h3>Sewer Connection Application</h3>
+            <span class="category">Utility Service</span>
+            <p>Application format for a sewer connection.</p>
+            <button class="download-btn" onclick="window.open('sewerconnectionapplication.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
     </div>
-</div>
+    
+    <!-- Card 24 -->
+    <div class="card">
+        
+        <div class="card-content">
+            <h3>Trade License Application</h3>
+            <span class="category">Business Service</span>
+            <p>Application format for a trade license.</p>
+            <button class="download-btn" onclick="window.open('tradelicenseapplication.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
     </div>
-
-</div>
-</div>
-<footer>
-   
-    <div id="footer">
+    
+    <!-- Card 25 -->
+    <div class="card">
+       
+        <div class="card-content">
+            <h3>Health Trade License Application</h3>
+            <span class="category">Business Service</span>
+            <p>Application format for a health trade license.</p>
+            <button class="download-btn" onclick="window.open('health-trade-license.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 26 -->
+    <div class="card">
+      
+        <div class="card-content">
+            <h3>Building Plan Approval Application</h3>
+            <span class="category">Building Service</span>
+            <p>Application format for building plan approval.</p>
+            <button class="download-btn" onclick="window.open('building-plan.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 27 -->
+    <div class="card">
      
-    <a href="disclaimer.html" target="_blank">Disclaimer</a>
-    <a href="privacypolicy.html" target="_blank">Privacy-Policy</a>
-    <a href="terms.html" target="_blank">Terms and Conditions</a>
-    <a href="contact.html" target="_blank">Contact</a>
-  
-    <div id="saluations" style="background-color: #64748B; color: wheat;">
-       <h2>Thank You  ❤️</h2>
-
-<p>
-Thank you for visiting ❤️<strong>Sarkaari Setu</strong>. Our mission is to make government information more accessible, transparent, and easy to understand for everyone. We sincerely appreciate your trust in our platform.
-</p>
-
-<p>
-If you find Sarkaari Setu helpful, please consider supporting our mission by sharing the website with your friends, family, classmates, and anyone who may benefit from it. Your support helps us reach more people and continue improving our platform.
-</p>
-
-<p>
-We also encourage all users to verify important information through the respective official government websites before making any decisions.
-</p>
+        <div class="card-content">
+            <h3>Property Transfer Application</h3>
+            <span class="category">Property Service</span>
+            <p>Application format for property transfer/mutation.</p>
+            <button class="download-btn" onclick="window.open('property-transfer.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
     </div>
-     </div>
-</footer>
-<script src="script.js"></script>
-
-</body>
+    
+    <!-- Card 28 -->
+    <div class="card">
+     
+        <div class="card-content">
+            <h3>House Tax Correction Application</h3>
+            <span class="category">Property Service</span>
+            <p>Application format for house tax correction.</p>
+            <button class="download-btn" onclick="window.open('house-tax-correction.html', '_blank', 'noopener,noreferrer')"">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 29 -->
+    <div class="card">
+    
+        <div class="card-content">
+            <h3>Property Tax Rebate Application</h3>
+            <span class="category">Property Service</span>
+            <p>Application format for property tax rebate.</p>
+            <button class="download-btn" onclick="window.open('property-tax-rebate.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 30 -->
+    <div class="card">
+    
+        <div class="card-content">
+            <h3>Encroachment Complaint</h3>
+            <span class="category">Complaint</span>
+            <p>Application format to report encroachment.</p>
+            <button class="download-btn" onclick="window.open('enroachment.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 31 -->
+    <div class="card">
+    
+        <div class="card-content">
+            <h3>Sanitation Complaint</h3>
+            <span class="category">Complaint</span>
+            <p>Application format for sanitation complaints.</p>
+            <button class="download-btn" onclick="window.location.href='sanitation.html'">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 32 -->
+    <div class="card">
+    
+        <div class="card-content">
+            <h3>Street Light Complaint</h3>
+            <span class="category">Complaint</span>
+            <p>Application format for street light complaints.</p>
+            <button class="download-btn" onclick="window.open('street-light.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 33 -->
+    <div class="card">
+    
+        <div class="card-content">
+            <h3>Garbage Collection Complaint</h3>
+            <span class="category">Complaint</span>
+            <p>Application format for garbage collection issues.</p>
+            <button class="download-btn" onclick="window.open('garbage.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 34 -->
+    <div class="card">
+      
+        <div class="card-content">
+            <h3>Stray Animal Complaint</h3>
+            <span class="category">Complaint</span>
+            <p>Application format for stray animal complaints.</p>
+            <button class="download-btn" onclick="window.open('stray-animal.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 35 -->
+    <div class="card">
+       
+        <div class="card-content">
+            <h3>Park Maintenance Complaint</h3>
+            <span class="category">Complaint</span>
+            <p>Application format for park maintenance requests.</p>
+            <button class="download-btn" onclick="window.open('park-maintenance.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 36 -->
+    <div class="card">
+    
+        <div class="card-content">
+            <h3>Road Repair Complaint</h3>
+            <span class="category">Complaint</span>
+            <p>Application format for road repair complaints.</p>
+            <button class="download-btn" onclick="window.open('road-repair.html', '_blank', 'noopener,noreferrer')"">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 37 -->
+    <div class="card">
+     
+        <div class="card-content">
+            <h3>Drain Cleaning Complaint</h3>
+            <span class="category">Complaint</span>
+            <p>Application format for drain cleaning requests.</p>
+            <button class="download-btn" onclick="window.open('drain-cleaning.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 38 -->
+    <div class="card">
+       
+        <div class="card-content">
+            <h3>Illegal Construction Complaint</h3>
+            <span class="category">Complaint</span>
+            <p>Application format to report illegal construction.</p>
+            <button class="download-btn" onclick="window.open('illegal-construction.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 39 -->
+    <div class="card">
+       
+        <div class="card-content">
+            <h3>Shop Registration Application</h3>
+            <span class="category">Business Service</span>
+            <p>Application format for shop registration.</p>
+            <button class="download-btn" onclick="window.open('shop-registration.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 40 -->
+    <div class="card">
+       
+        <div class="card-content">
+            <h3>Hawker/Vendor License Application</h3>
+            <span class="category">Business Service</span>
+            <p>Application format for hawker/vendor license.</p>
+            <button class="download-btn" onclick="window.open('hawker-license.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 41 -->
+    <div class="card">
+      
+        <div class="card-content">
+            <h3>Advertisement Permission Application</h3>
+            <span class="category">Business Service</span>
+            <p>Application format for advertisement permission.</p>
+            <button class="download-btn" onclick="window.open('advertisement.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 42 -->
+    <div class="card">
+     
+        <div class="card-content">
+            <h3>Community Hall Booking</h3>
+            <span class="category">Public Service</span>
+            <p>Application format for community hall booking.</p>
+            <button class="download-btn" onclick="window.open('community-hall.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 43 -->
+    <div class="card">
+    
+        <div class="card-content">
+            <h3>Water Tanker Booking</h3>
+            <span class="category">Utility Service</span>
+            <p>Application format for water tanker booking.</p>
+            <button class="download-btn" onclick="window.open('water-tanker.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 44 -->
+    <div class="card">
+    
+        <div class="card-content">
+            <h3>RTI Application</h3>
+            <span class="category">Information</span>
+            <p>Application format under the Right to Information Act.</p>
+            <button class="download-btn" onclick="window.open('rti.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 45 -->
+    <div class="card">
+    
+        <div class="card-content">
+            <h3>Grievance/Complaint Application</h3>
+            <span class="category">Complaint</span>
+            <p>General grievance and complaint application format.</p>
+            <button class="download-btn" onclick="window.open('grievance.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 46 -->
+    <div class="card">
+        
+        <div class="card-content">
+            <h3>Name Correction in Birth Certificate</h3>
+            <span class="category">Citizen Service</span>
+            <p>Application format for name correction in birth certificate.</p>
+            <button class="download-btn" onclick="window.open('birth-name-correction.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+    
+    <!-- Card 47 -->
+    <div class="card">
+    
+        <div class="card-content" >
+            <h3>Address Correction in Municipal Records</h3>
+            <span class="category">Citizen Service</span>
+            <p>Application format for address correction in municipal records.</p>
+            <button class="download-btn" onclick="window.open('address-correction.html', '_blank', 'noopener,noreferrer')">
+                <i class="fas fa-download"></i> View Format
+            </button>
+        </div>
+    </div>
+        </div>
+    
+    </div>
+    </div>
+    <footer>
+       
+        <div id="footer">
+         
+        <a href="disclaimer.html" target="_blank">Disclaimer</a>
+        <a href="privacypolicy.html" target="_blank">Privacy-Policy</a>
+        <a href="terms.html" target="_blank">Terms and Conditions</a>
+        <a href="contact.html" target="_blank">Contact</a>
+      
+        <div id="saluations" style="background-color: #64748B; color: wheat;">
+           <h2>Thank You  ❤️</h2>
+    
+    <p>
+    Thank you for visiting ❤️<strong>Sarkaari Setu</strong>. Our mission is to make government information more accessible, transparent, and easy to understand for everyone. We sincerely appreciate your trust in our platform.
+    </p>
+    
+    <p>
+    If you find Sarkaari Setu helpful, please consider supporting our mission by sharing the website with your friends, family, classmates, and anyone who may benefit from it. Your support helps us reach more people and continue improving our platform.
+    </p>
+    
+    <p>
+    We also encourage all users to verify important information through the respective official government websites before making any decisions.
+    </p>
+        </div>
+         </div>
+    </footer>
+    <script src="script.js"></script>
+    
+    </body>
 </html>
