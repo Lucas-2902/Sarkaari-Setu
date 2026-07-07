@@ -403,7 +403,7 @@ h3{
     height: 3rem;
     flex-wrap: wrap;
     position: fixed;
-    margin-left: calc(100vw-6rem);
+    margin-left: 60rem;
     margin-right: 3rem;
     margin-top: 3rem;
     z-index: 1000;
