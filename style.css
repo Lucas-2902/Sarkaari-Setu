@@ -715,10 +715,11 @@ footer::after{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px auto;
 }
 
 .urgent-tag {
-    background: #fff;
+    background-color: #ffffff;
     color: #d60000;
     padding: 8px 14px;
     border-radius: 30px;
