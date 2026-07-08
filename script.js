@@ -154,9 +154,7 @@ function filterCards() {
 searchInput.addEventListener('input', filterCards);
 
 document.getElementById("splusaime").style.display="block";
-}
-    document.querySelector("#splusaime").style.display="block";
-})
+document.querySelector("#splusaime").style.display="block";
 
 function searchCards() {
     let input = document.getElementById("searchInput").value.toLowerCase();
