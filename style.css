@@ -9,7 +9,7 @@ body{
 }
 
 button:hover {
-    coursor: pointer;
+    coursor: pointer; !important
 }
 
 #languagePopup{
