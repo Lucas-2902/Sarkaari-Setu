@@ -730,6 +730,8 @@ footer::after{
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
+        display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .urgent-notification {
