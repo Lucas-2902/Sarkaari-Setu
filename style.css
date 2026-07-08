@@ -810,3 +810,9 @@ footer::after{
         width: 100%;
     }
 }
+
+#card-new{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
