@@ -669,6 +669,7 @@ const translations = {
 "Visit our AI for help":"सहायता के लिए हमारे AI पर जाएँ",
 "Neet Result":"NEET का परिणाम",
     "Guide to check your results of the NEET examination":"NEET परीक्षा के नतीजे देखने के लिए गाइड",
+    "Links":"लिंक",
 };
 
 function translateToHindi() {
