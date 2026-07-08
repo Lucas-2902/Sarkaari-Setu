@@ -134,17 +134,7 @@
     
     </script>
     
-    <!-- Language Popup -->
     
-    <div id="languagePopup">
-    <pre id="name">    <img src="logo.png" alt="logo" height="100px" width="100px"><br>Sarkaari-Setu+</pre>
-        <h1>भाषा चुनें / Select Language</h1>
-        <p>कृपया अपनी पसंदीदा भाषा चुनें / Please select your preferred language</p>
-    <div id="buttons">
-        <button id="hindiBtn" style="font-weight: lighter;">प्रवेश करें/हिंदी </button>
-        <button id="englishBtn" style="font-weight: lighter;"><b>Enter/<br>English</button>
-    </div>
-    </div>
     
     <!-- Website Content -->
     <header>
@@ -153,15 +143,14 @@
             <i class="fa-regular fa-building"></i>
             <h2><img src="logo.png" alt="logo" height="30px" width="30px">&nbsp;&nbsp;Sarkaari-Setu+</h2>
         </div>
-        <!-- 1. The container where the button will appear -->
+
         <div id="google_translate_element"></div>
         
-        <!-- 2. The script configured for English and Hindi -->
         <script type="text/javascript">
         function googleTranslateElementInit() {
           new google.translate.TranslateElement({
             pageLanguage: 'en', 
-            includedLanguages: 'en,hi', // Limits options to English and Hindi
+            includedLanguages: 'en,hi', 
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE
           }, 'google_translate_element');
         }
