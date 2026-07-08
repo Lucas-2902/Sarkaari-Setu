@@ -9,7 +9,7 @@ body{
 }
 
 button:hover {
-    coursor: pointer; !important
+    coursor: pointer !important;
 }
 
 #mainContent{
