@@ -10,50 +10,46 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:Segoe UI,Arial,sans-serif;
 }
+
 body{
-    margin:0;
-    font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(135deg,#020617,#0F172A,#1E293B);
+    background:#0F172A;
     color:#F8FAFC;
+    line-height:1.7;
 }
 
 .container{
+    width:90%;
     max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
+    margin:40px auto;
 }
 
-.title{
+h1{
     text-align:center;
-    font-size:42px;
-    font-weight:700;
     color:#38BDF8;
     margin-bottom:10px;
+    font-size:2.5rem;
 }
 
 .subtitle{
     text-align:center;
     color:#94A3B8;
-    margin-bottom:40px;
+    margin-bottom:35px;
 }
 
 .card{
-    background:rgba(30,41,59,.7);
-    backdrop-filter:blur(14px);
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:18px;
+    background:#1E293B;
+    border:1px solid #334155;
+    border-radius:15px;
     padding:25px;
     margin-bottom:25px;
-    transition:.3s ease;
-    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-6px);
+    transform:translateY(-5px);
     border-color:#38BDF8;
-    box-shadow:0 15px 35px rgba(56,189,248,.2);
 }
 
 .card h2{
@@ -61,113 +57,207 @@ body{
     margin-bottom:15px;
 }
 
-.card p,
-.card li{
+.card p{
     color:#CBD5E1;
-    line-height:1.8;
 }
 
-.card ul,
-.card ol{
+.card ul{
+    margin-top:15px;
     padding-left:20px;
+}
+
+.card li{
+    margin-bottom:10px;
+}
+
+.tip{
+    margin-top:18px;
+    padding:15px;
+    background:#082F49;
+    border-left:5px solid #38BDF8;
+    border-radius:10px;
+}
+
+.warning{
+    background:#3F2A00;
+    border-left:5px solid #FACC15;
 }
 
 .btn{
     display:inline-block;
     margin-top:20px;
-    padding:14px 26px;
-    border-radius:12px;
-    text-decoration:none;
-    color:white;
     background:#0EA5E9;
+    color:white;
+    text-decoration:none;
+    padding:14px 24px;
+    border-radius:10px;
+    font-weight:bold;
     transition:.3s;
-    font-weight:600;
 }
 
 .btn:hover{
     background:#0284C7;
-    transform:scale(1.03);
-}
-
-.notice{
-    background:#1E293B;
-    border-left:5px solid #FACC15;
-    color:#F8FAFC;
-    padding:18px;
-    border-radius:12px;
 }
 
 footer{
+    margin:40px 0;
     text-align:center;
-    margin-top:40px;
     color:#64748B;
 }
 
 @media(max-width:700px){
-    .title{
-        font-size:30px;
-    }
 
-    .card{
-        padding:18px;
-    }
+.container{
+    width:95%;
+}
+
+h1{
+    font-size:2rem;
+}
+
+.card{
+    padding:20px;
+}
+
 }
 </style>
 
 </head>
-<div class="guide">
+<body>
 
-<h1>How to Use the CBSE Website</h1>
+<div class="container">
 
-<div class="step">
-<h2>Step 1: Open the Official Website</h2>
-<p>
-Visit the official CBSE website from your browser. The homepage displays the latest circulars, notices, examination updates, and important announcements.
+<h1>CBSE Website User Guide</h1>
+
+<p class="subtitle">
+Learn how to efficiently use the official CBSE website for examinations, results, academics, and student services.
 </p>
-</div>
 
-<div class="step">
-<h2>Step 2: Choose the Service You Need</h2>
+<div class="card">
+
+<h2>🌐 Step 1 — Open the Official Website</h2>
+
 <p>
-Use the navigation menu to select the category you're looking for, such as Results, Examinations, Academics, School Services, or Student Services.
+Visit the official CBSE website using your browser. The homepage displays the latest notices, examination updates, public announcements, and circulars.
 </p>
+
+<div class="tip">
+<b>Tip:</b> Always start from the homepage because important announcements appear there first.
 </div>
 
-<div class="step">
-<h2>Step 3: Read the Latest Notifications</h2>
+</div>
+
+<div class="card">
+
+<h2>📂 Step 2 — Choose the Correct Section</h2>
+
+<p>Select the section based on your requirement.</p>
+
+<ul>
+<li><b>Results</b> – Board examination results.</li>
+<li><b>Examinations</b> – Date sheets, admit cards, notices.</li>
+<li><b>Academics</b> – Syllabus and sample papers.</li>
+<li><b>Student Services</b> – Migration certificate, duplicate documents.</li>
+<li><b>School Services</b> – Affiliation and school-related information.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📢 Step 3 — Read the Complete Notification</h2>
+
 <p>
-Before proceeding, check the latest notices on the homepage. Important information such as examination schedules, admit card announcements, and result notifications are published here.
+Do not rely only on headlines. Open the circular and carefully read:
 </p>
+
+<ul>
+<li>Eligibility</li>
+<li>Important dates</li>
+<li>Required documents</li>
+<li>Application process</li>
+<li>Official instructions</li>
+</ul>
+
 </div>
 
-<div class="step">
-<h2>Step 4: Access Your Required Service</h2>
+<div class="card">
+
+<h2>📝 Step 4 — Keep Required Details Ready</h2>
+
+<p>Many CBSE services require:</p>
+
+<ul>
+<li>Roll Number</li>
+<li>School Number</li>
+<li>Admit Card ID</li>
+<li>Registration Number</li>
+<li>Date of Birth</li>
+</ul>
+
+<div class="tip">
+Keeping these details ready saves time and prevents mistakes.
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>📄 Step 5 — Download Important Documents</h2>
+
 <p>
-Click the relevant section and follow the instructions provided. Some services may require information such as your Roll Number, School Number, Admit Card ID, or Registration Number.
+Download important PDFs such as:
 </p>
-</div>
 
-<div class="step">
-<h2>Step 5: Download or Print Documents</h2>
+<ul>
+<li>Result</li>
+<li>Date Sheet</li>
+<li>Sample Papers</li>
+<li>Circulars</li>
+<li>Guidelines</li>
+</ul>
+
 <p>
-If your required document is available, download the PDF or print a copy for future reference. Always verify that the document is from the official CBSE website.
+Save a copy on your device and print it if required.
 </p>
+
 </div>
 
-<div class="step">
-<h2>Need Help?</h2>
+<div class="card">
+
+<h2>⚠️ Step 6 — Verify Information</h2>
+
 <p>
-If you're unsure where to find a particular service, use the search option on the website or ask our AI assistant for guidance.
+Always verify that the notice is published on the official CBSE website before following any instructions.
 </p>
+
+<div class="tip warning">
+Avoid trusting fake result links, unofficial websites, or social media posts without verification.
 </div>
 
-<div class="note">
-<strong>Note:</strong> This guide is intended to help users navigate the official CBSE website. It does not replace the instructions or notifications published by CBSE.
 </div>
 
+<div class="card">
+
+<h2>💡 Helpful Tips</h2>
+
+<ul>
+<li>Bookmark the official website.</li>
+<li>Check the homepage regularly during board exams.</li>
+<li>Download important notices immediately.</li>
+<li>Keep your credentials ready before checking results.</li>
+<li>If the website is slow on result day, wait a few minutes and try again.</li>
+<li>Read every instruction carefully before submitting any application.</li>
+</ul>
+
+<a href="https://www.cbse.gov.in/" target="_blank" class="btn">
+Visit Official CBSE Website
+</a>
+
 </div>
+
 <footer>
-© Your Website | Guide to CBSE Services
+This guide is for educational purposes only. All services, notices, examinations, and results are managed by the Central Board of Secondary Education (CBSE).
 </footer>
 
 </div>
