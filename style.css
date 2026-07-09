@@ -189,7 +189,7 @@ header{
 
 .container{
     max-width:1300px;
-    diplay: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width:95%;
