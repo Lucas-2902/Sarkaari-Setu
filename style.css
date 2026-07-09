@@ -410,24 +410,43 @@ h3{
 }
 
 #splusaime {
-    display: flex;
-    width: 5rem;
-    height: 5rem;
-    flex-wrap: wrap;
     position: fixed;
-    right: 0;
-    margin-right: 5rem;
-    margin-top: 8rem;
-    z-index: 1000;
-    border-radius: 50%;
-    background-image: url('S+.png');
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px; 
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+    transition: all 0.3s ease;
 }
 
 #splusaime:hover {
-    cursor: pointer;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.6);
+}
+
+#splusaime::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('S+.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
 }
 
 footer {
@@ -681,6 +700,13 @@ footer::after {
         font-size: 13px;
         line-height: 1.5;
     }
+
+    #splusaime {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 16px;
+        font-size: 13px;
+    }
 }
 
 /* Extra Small Mobile Devices (Below 480px) */
@@ -695,5 +721,17 @@ footer::after {
     
     .card h2 {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    #splusaime span {
+        display: none;
+    }
+    #splusaime {
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        border-radius: 50%;
     }
 }
