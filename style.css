@@ -9,7 +9,7 @@ body{
 }
 
 button:hover {
-    coursor: pointer !important;
+    cursor: pointer !important;
 }
 
 #mainContent{
@@ -162,7 +162,7 @@ header{
     font-size:15px;
 }
 
-/* Tabs */
+/* Main Content */
 
 .tabs{
     display:flex;
@@ -185,16 +185,12 @@ header{
     border-bottom:3px solid #4f46e5;
 }
 
-/* Layout container */
-
 .container{
     max-width:1300px;
     width:95%;
     margin:auto;
     padding:30px 0;
 }
-
-/* Search */
 
 .search{
     display:flex;
@@ -219,37 +215,6 @@ header{
     font-size:17px;
     background:transparent;
 }
-
-.search-box {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    border: 1px solid #dce1ea;
-    border-radius: 14px;
-    padding: 16px 20px;
-    margin-bottom: 30px;
-}
-
-.search-box i {
-    color: #94a3b8;
-    font-size: 18px;
-}
-
-.search-box input {
-    border: none;
-    outline: none;
-    width: 100%;
-    margin-left: 14px;
-    font-size: 17px;
-    color: #334155;
-}
-
-.search-boxtwo{
-    height: 5px;
-    width: 100pxpx;
-}
-
-/* Filters */
 
 .filters{
     display:flex;
@@ -279,8 +244,6 @@ header{
     color:white;
 }
 
-/* Headings */
-
 h1 {
     font-size: 42px;
     font-weight: 700;
@@ -304,8 +267,6 @@ h3{
     color: #334155;
     margin-bottom: 25px;
 }
-
-/* ===== Cards (single, unified, non-conflicting definition) ===== */
 
 .cards{
     display:flex;
@@ -440,21 +401,6 @@ h3{
     background: #4338ca;
 }
 
-/* Utility / misc */
-
-.ApplicationFormat{
-    display: none;
-}
-
-.ALLboard{
-    border: 2px solid black;
-}
-
-.ALLboards {
-    width: 100%;
-    transition: all 0.3s ease;
-}
-
 #splusaime {
     display: flex;
     width: 5rem;
@@ -474,148 +420,6 @@ h3{
 
 #splusaime:hover {
     cursor: pointer;
-}
-/* Responsive */
-
-@media(max-width:1000px){
-    .cards-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
-@media(max-width:768px){
-    .cards-grid,
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .card {
-        flex-direction: column;
-    }
-
-    .card-content h3 {
-        font-size: 24px;
-    }
-
-    header{
-        padding:15px;
-    }
-
-    .tabs{
-        padding:12px 15px;
-    }
-
-    .container{
-        width:92%;
-    }
-}
-
-@media screen and (max-width: 768px){
-    #languagePopup{
-        width:100%;
-        padding:15px;
-        overflow-x:hidden;
-    }
-
-    #name{
-        font-size:40px;
-        white-space:normal;
-        text-align:center;
-    }
-
-    #name img{
-        width:80px;
-        height:80px;
-    }
-
-    #buttons{
-        display:flex;
-        flex-direction:column;
-        gap:15px;
-        align-items:center;
-    }
-
-    #buttons button{
-        width:90%;
-        max-width:300px;
-    }
-
-    h1{
-        font-size:2rem;
-    }
-
-    p{
-        text-align:center;
-    }
-}
-
-.card-new{
-    background-color: #1E293B ;
-    border-radius:14px;
-    padding:24px;
-    box-shadow:0 2px 8px rgba(0,0,0,.08);
-    transition:.3s;
-color: white;
-    display:flex;
-    flex-direction:column;
-width:380px;
-    min-height:300px;
-}
-
-.card-new:hover{
-    transform:translateY(-3px);
-}
-
-.card-new h2{
-    font-size:18px;
-    font-weight:500;
-    line-height:1.4;
-    color: white;
-}
-
-.card-new p{
-    margin-top:14px;
-    font-size:15px;
-    color:#666;
-    line-height:1.5;
-color: white;
-    flex-grow:1;
-}
-
-.card-new span{
-    display:block;
-    margin-top:15px;
-    color:white;
-    font-size:14px;
-
-}
-
-.card-new button{
-    margin-top:20px;
-    width:100%;
-    border:none;
-    background:#4f46e5;
-    color:white;
-    padding:12px;
-    border-radius:10px;
-    cursor:pointer;
-    font-size:16px;
-    transition:.3s;
-}
-
-.card-new button:hover{
-    transform:scale(1.02);
-    box-shadow:0 5px 15px rgba(79,70,229,.35);
-}
-@media (max-width: 768px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
-}
-#formatsearch{
-    width: 100%;
-    height: 8vh;
-    border-radius: 2vh;
 }
 
 footer {
@@ -718,45 +522,6 @@ footer::after {
     padding-top: 25px;
 }
 
-@media (max-width: 768px) {
-    footer {
-        padding: 40px 0 20px;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        width: 100%;
-        gap: 8px;
-    }
-
-    .footer-links a {
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
-    }
-
-    #saluations {
-        padding: 24px;
-    }
-
-    #saluations h2 {
-        font-size: 24px;
-    }
-
-    #saluations p {
-        font-size: 14px;
-    }
-}
-
-#newlinks{
-      display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-        display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
-
 .urgent-notification {
     width: 90%;
     max-width: 900px;
@@ -821,21 +586,4 @@ footer::after {
     100% {
         box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
     }
-}
-
-@media (max-width: 768px) {
-    .urgent-notification {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .check-btn {
-        width: 100%;
-    }
-}
-
-#card-new{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
 }
