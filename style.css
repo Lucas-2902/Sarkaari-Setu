@@ -658,18 +658,9 @@ footer::after {
         padding: 15px;
     }
 
-    .logo h2 {
-        font-size: 18px;
-    }
-
-    .tabs {
-        justify-content: center;
-        gap: 15px;
-        padding: 10px 15px;
-    }
-
-    .tabs button {
-        font-size: 14px;
+    #name {
+        font-size: 32px !important;
+        text-align: center;
     }
 
     #buttons {
@@ -680,36 +671,6 @@ footer::after {
 
     .cards {
         grid-template-columns: 1fr;
-    }
-
-    #name {
-        font-size: 32px !important;
-    }
-
-    .card {
-        max-width: 100%;
-        flex: 1 1 100%;
-    }
-
-    #disclaimerBox {
-        padding: 15px;
-        width: 95%;
-    }
-
-    #disclaimerBox h2 {
-        font-size: 22px;
-    }
-
-    .disclaimer-content {
-        font-size: 13px;
-        line-height: 1.5;
-    }
-
-    #splusaime {
-        bottom: 15px;
-        right: 15px;
-        padding: 10px 16px;
-        font-size: 13px;
     }
 }
 
