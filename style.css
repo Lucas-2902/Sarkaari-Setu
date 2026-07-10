@@ -18,11 +18,15 @@ button:hover {
     padding:40px;
 }
 
-#buttons{
-    height: 300px;
-    width: 700px;
+#buttons {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
 }
 
 #name{
@@ -277,14 +281,12 @@ h3{
     margin-bottom: 25px;
 }
 
-.cards{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap:wrap;
-    gap:20px;
-    width:100%;
-    transition: all 0.3s ease;
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .cards-grid {
@@ -671,18 +673,17 @@ footer::after {
     }
 
     #buttons {
+        flex-direction: column; 
+        align-items: stretch;
         width: 100% !important;
-        height: auto !important;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #name {
-        font-size: 32px !important;
     }
 
     .cards {
         grid-template-columns: 1fr;
+    }
+
+    #name {
+        font-size: 32px !important;
     }
 
     .card {
