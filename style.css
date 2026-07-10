@@ -190,6 +190,7 @@ header{
 .container{
     max-width:1300px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width:95%;
@@ -207,6 +208,8 @@ header{
     padding:14px 18px;
     transition: all 0.3s ease;
     margin-bottom: 2rem;
+    width: 100%;
+    max-width: 600px;
 }
 
 .search i{
