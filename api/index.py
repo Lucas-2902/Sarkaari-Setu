@@ -40,10 +40,17 @@ async def generate_guide(request_data: GuideRequest):
             contents=request_data.prompt,
             config=types.GenerateContentConfig(
                 system_instruction=system_instruction,
-                tools=[types.Tool(google_search=types.GoogleSearch())]
+                # tools=[types.Tool(google_search=types.GoogleSearch())]
+                # The line above will be out of comment only when our plan will be upgraded.
             )
         )
         return {"guide": response.text}
         
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        error_msg = str(e)
+        if "429" in error_msg or "RESOURCE_EXHAUSTED" in error_msg:
+            raise HTTPException(
+                status_code=429, 
+                detail="Sarkaari-Setu+ AI is currently busy handling many requests. Please try again in 1 minute."
+            )
+        raise HTTPException(status_code=500, detail=error_msg)
