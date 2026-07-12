@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("searchInput");
     const cards = document.querySelectorAll(".cards .card, .cards .card-new");
 
-    let currentCategory = "important";
+    let currentCategory = "all"; 
 
     function filterCards() {
         const searchQuery = searchInput ? searchInput.value.toLowerCase().trim() : "";
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const description = card.querySelector("p") ? card.querySelector("p").textContent.toLowerCase() : "";
             const matchesSearch = title.includes(searchQuery) || description.includes(searchQuery);
 
-            const matchesTab = card.classList.contains(currentCategory);
+            const matchesTab = (currentCategory === "all") || card.classList.contains(currentCategory);
 
             if (matchesTab && matchesSearch) {
                 card.style.display = "";
@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
             button.classList.remove("deactive");
 
             currentCategory = button.id;
-
             filterCards();
         });
     });
