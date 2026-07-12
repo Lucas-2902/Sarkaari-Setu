@@ -98,17 +98,15 @@ footer{
 }
 
 @media(max-width:700px){
-
-.container{
-    width:95%;
-}
-
-h1{
-    font-size:2rem;
-}
-
-.card{
-    padding:20px;
-}
-
+    .container{
+        width:95%;
+    }
+    
+    h1{
+        font-size:2rem;
+    }
+    
+    .card{
+        padding:20px;
+    }
 }
