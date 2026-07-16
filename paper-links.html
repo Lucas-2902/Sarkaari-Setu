@@ -1,1 +1,272 @@
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>View Papers (2015 - 2026)</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/papers.css">
+        
+        <style>
+            .wrapper {
+                width: 95%;
+                max-width: 800px;
+                margin: 40px auto;
+                padding-bottom: 50px;
+            }
+    
+            .back-link {
+                display: inline-block;
+                color: #3B82F6;
+                text-decoration: none;
+                margin-bottom: 25px;
+                font-weight: 500;
+                transition: .3s;
+            }
+    
+            .back-link:hover {
+                color: #2563EB;
+            }
+    
+            .exam-section {
+                display: none;
+            }
+    
+            .list-container {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+    
+            .paper-row {
+                background: #111827;
+                border: 1px solid #1f2937;
+                border-radius: 12px;
+                padding: 18px 22px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: .3s;
+            }
+    
+            .paper-row:hover {
+                border-color: #2563EB;
+                box-shadow: 0 5px 15px rgba(37,99,235,.1);
+            }
+    
+            .paper-title {
+                font-size: 16px;
+                font-weight: 500;
+            }
+    
+            .view-btn {
+                padding: 10px 20px;
+                background: #2563EB;
+                color: white;
+                text-decoration: none;
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 14px;
+                transition: .3s;
+            }
+    
+            .view-btn:hover {
+                background: #1D4ED8;
+            }
+    
+            #fallback-msg {
+                display: none;
+                text-align: center;
+                padding: 40px;
+                background: #111827;
+                border: 1px solid #1f2937;
+                border-radius: 15px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <header>
+            <h1 id="main-heading">Question Papers</h1>
+            <p>Access official archived papers with full answer keys directly on the web.</p>
+        </header>
+    
+        <div class="wrapper">
+            <a href="question-papers.html" class="back-link">← Back to Dashboard</a>
+    
+            <div id="section-NEET-UG" class="exam-section">
+                <h2 class="category-title" style="margin: 0 0 20px 0;">NEET-UG Archives</h2>
+                <div class="list-container">
+                    <div class="paper-row"><span class="paper-title">NEET-UG 2026 Question Paper</span><a href="https://example.com/web-pdfs/neet-2026.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NEET-UG 2025 Question Paper</span><a href="https://example.com/web-pdfs/neet-2025.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NEET-UG 2024 Question Paper</span><a href="https://example.com/web-pdfs/neet-2024.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NEET-UG 2023 Question Paper</span><a href="https://example.com/web-pdfs/neet-2023.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NEET-UG 2022 Question Paper</span><a href="https://example.com/web-pdfs/neet-2022.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NEET-UG 2021 Question Paper</span><a href="https://example.com/web-pdfs/neet-2021.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NEET-UG 2020 Question Paper</span><a href="https://example.com/web-pdfs/neet-2020.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NEET-UG 2019 Question Paper</span><a href="https://example.com/web-pdfs/neet-2019.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NEET-UG 2018 Question Paper</span><a href="https://example.com/web-pdfs/neet-2018.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NEET-UG 2017 Question Paper</span><a href="https://example.com/web-pdfs/neet-2017.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NEET-UG 2016 Question Paper</span><a href="https://example.com/web-pdfs/neet-2016.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NEET-UG 2015 Question Paper</span><a href="https://example.com/web-pdfs/neet-2015.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                </div>
+            </div>
+    
+            <div id="section-UPSC-CSE" class="exam-section">
+                <h2 class="category-title" style="margin: 0 0 20px 0;">UPSC-CSE Archives</h2>
+                <div class="list-container">
+                    <div class="paper-row"><span class="paper-title">UPSC-CSE 2026 Prelims Paper</span><a href="https://example.com/web-pdfs/upsc-2026.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">UPSC-CSE 2025 Prelims Paper</span><a href="https://example.com/web-pdfs/upsc-2025.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">UPSC-CSE 2024 Prelims Paper</span><a href="https://example.com/web-pdfs/upsc-2024.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">UPSC-CSE 2023 Prelims Paper</span><a href="https://example.com/web-pdfs/upsc-2023.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">UPSC-CSE 2022 Prelims Paper</span><a href="https://example.com/web-pdfs/upsc-2022.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">UPSC-CSE 2021 Prelims Paper</span><a href="https://example.com/web-pdfs/upsc-2021.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">UPSC-CSE 2020 Prelims Paper</span><a href="https://example.com/web-pdfs/upsc-2020.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">UPSC-CSE 2019 Prelims Paper</span><a href="https://example.com/web-pdfs/upsc-2019.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">UPSC-CSE 2018 Prelims Paper</span><a href="https://example.com/web-pdfs/upsc-2018.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">UPSC-CSE 2017 Prelims Paper</span><a href="https://example.com/web-pdfs/upsc-2017.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">UPSC-CSE 2016 Prelims Paper</span><a href="https://example.com/web-pdfs/upsc-2016.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">UPSC-CSE 2015 Prelims Paper</span><a href="https://example.com/web-pdfs/upsc-2015.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                </div>
+            </div>
+    
+            <div id="section-CLAT" class="exam-section">
+                <h2 class="category-title" style="margin: 0 0 20px 0;">CLAT Archives</h2>
+                <div class="list-container">
+                    <div class="paper-row"><span class="paper-title">CLAT 2026 Question Paper</span><a href="https://example.com/web-pdfs/clat-2026.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CLAT 2025 Question Paper</span><a href="https://example.com/web-pdfs/clat-2025.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CLAT 2024 Question Paper</span><a href="https://example.com/web-pdfs/clat-2024.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CLAT 2023 Question Paper</span><a href="https://example.com/web-pdfs/clat-2023.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CLAT 2022 Question Paper</span><a href="https://example.com/web-pdfs/clat-2022.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CLAT 2021 Question Paper</span><a href="https://example.com/web-pdfs/clat-2021.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CLAT 2020 Question Paper</span><a href="https://example.com/web-pdfs/clat-2020.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CLAT 2019 Question Paper</span><a href="https://example.com/web-pdfs/clat-2019.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CLAT 2018 Question Paper</span><a href="https://example.com/web-pdfs/clat-2018.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CLAT 2017 Question Paper</span><a href="https://example.com/web-pdfs/clat-2017.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CLAT 2016 Question Paper</span><a href="https://example.com/web-pdfs/clat-2016.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CLAT 2015 Question Paper</span><a href="https://example.com/web-pdfs/clat-2015.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                </div>
+            </div>
+    
+            <div id="section-NDA" class="exam-section">
+                <h2 class="category-title" style="margin: 0 0 20px 0;">NDA Archives</h2>
+                <div class="list-container">
+                    <div class="paper-row"><span class="paper-title">NDA 2026 Question Papers</span><a href="https://example.com/web-pdfs/nda-2026.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NDA 2025 Question Papers</span><a href="https://example.com/web-pdfs/nda-2025.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NDA 2024 Question Papers</span><a href="https://example.com/web-pdfs/nda-2024.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NDA 2023 Question Papers</span><a href="https://example.com/web-pdfs/nda-2023.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NDA 2022 Question Papers</span><a href="https://example.com/web-pdfs/nda-2022.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NDA 2021 Question Papers</span><a href="https://example.com/web-pdfs/nda-2021.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NDA 2020 Question Papers</span><a href="https://example.com/web-pdfs/nda-2020.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NDA 2019 Question Papers</span><a href="https://example.com/web-pdfs/nda-2019.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NDA 2018 Question Papers</span><a href="https://example.com/web-pdfs/nda-2018.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NDA 2017 Question Papers</span><a href="https://example.com/web-pdfs/nda-2017.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NDA 2016 Question Papers</span><a href="https://example.com/web-pdfs/nda-2016.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">NDA 2015 Question Papers</span><a href="https://example.com/web-pdfs/nda-2015.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                </div>
+            </div>
+    
+            <div id="section-CDS" class="exam-section">
+                <h2 class="category-title" style="margin: 0 0 20px 0;">CDS Archives</h2>
+                <div class="list-container">
+                    <div class="paper-row"><span class="paper-title">CDS 2026 Question Papers</span><a href="https://example.com/web-pdfs/cds-2026.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CDS 2025 Question Papers</span><a href="https://example.com/web-pdfs/cds-2025.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CDS 2024 Question Papers</span><a href="https://example.com/web-pdfs/cds-2024.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CDS 2023 Question Papers</span><a href="https://example.com/web-pdfs/cds-2023.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CDS 2022 Question Papers</span><a href="https://example.com/web-pdfs/cds-2022.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CDS 2021 Question Papers</span><a href="https://example.com/web-pdfs/cds-2021.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CDS 2020 Question Papers</span><a href="https://example.com/web-pdfs/cds-2020.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CDS 2019 Question Papers</span><a href="https://example.com/web-pdfs/cds-2019.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CDS 2018 Question Papers</span><a href="https://example.com/web-pdfs/cds-2018.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CDS 2017 Question Papers</span><a href="https://example.com/web-pdfs/cds-2017.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CDS 2016 Question Papers</span><a href="https://example.com/web-pdfs/cds-2016.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CDS 2015 Question Papers</span><a href="https://example.com/web-pdfs/cds-2015.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                </div>
+            </div>
+    
+            <div id="section-CUET-UG" class="exam-section">
+                <h2 class="category-title" style="margin: 0 0 20px 0;">CUET-UG Archives</h2>
+                <div class="list-container">
+                    <div class="paper-row"><span class="paper-title">CUET-UG 2026 Question Papers</span><a href="https://example.com/web-pdfs/cuet-2026.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CUET-UG 2025 Question Papers</span><a href="https://example.com/web-pdfs/cuet-2025.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CUET-UG 2024 Question Papers</span><a href="https://example.com/web-pdfs/cuet-2024.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CUET-UG 2023 Question Papers</span><a href="https://example.com/web-pdfs/cuet-2023.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CUET-UG 2022 Question Papers</span><a href="https://example.com/web-pdfs/cuet-2022.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CUET-UG 2021 Question Papers</span><a href="https://example.com/web-pdfs/cuet-2021.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CUET-UG 2020 Question Papers</span><a href="https://example.com/web-pdfs/cuet-2020.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CUET-UG 2019 Question Papers</span><a href="https://example.com/web-pdfs/cuet-2019.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CUET-UG 2018 Question Papers</span><a href="https://example.com/web-pdfs/cuet-2018.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CUET-UG 2017 Question Papers</span><a href="https://example.com/web-pdfs/cuet-2017.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CUET-UG 2016 Question Papers</span><a href="https://example.com/web-pdfs/cuet-2016.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">CUET-UG 2015 Question Papers</span><a href="https://example.com/web-pdfs/cuet-2015.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                </div>
+            </div>
+    
+            <div id="section-JEE-MAINS" class="exam-section">
+                <h2 class="category-title" style="margin: 0 0 20px 0;">JEE-Mains Archives</h2>
+                <div class="list-container">
+                    <div class="paper-row"><span class="paper-title">JEE-Mains 2026 Question Papers</span><a href="https://example.com/web-pdfs/jee-mains-2026.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Mains 2025 Question Papers</span><a href="https://example.com/web-pdfs/jee-mains-2025.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Mains 2024 Question Papers</span><a href="https://example.com/web-pdfs/jee-mains-2024.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Mains 2023 Question Papers</span><a href="https://example.com/web-pdfs/jee-mains-2023.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Mains 2022 Question Papers</span><a href="https://example.com/web-pdfs/jee-mains-2022.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Mains 2021 Question Papers</span><a href="https://example.com/web-pdfs/jee-mains-2021.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Mains 2020 Question Papers</span><a href="https://example.com/web-pdfs/jee-mains-2020.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Mains 2019 Question Papers</span><a href="https://example.com/web-pdfs/jee-mains-2019.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Mains 2018 Question Papers</span><a href="https://example.com/web-pdfs/jee-mains-2018.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Mains 2017 Question Papers</span><a href="https://example.com/web-pdfs/jee-mains-2017.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Mains 2016 Question Papers</span><a href="https://example.com/web-pdfs/jee-mains-2016.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Mains 2015 Question Papers</span><a href="https://example.com/web-pdfs/jee-mains-2015.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                </div>
+            </div>
+    
+            <div id="section-JEE-ADVANCED" class="exam-section">
+                <h2 class="category-title" style="margin: 0 0 20px 0;">JEE-Advanced Archives</h2>
+                <div class="list-container">
+                    <div class="paper-row"><span class="paper-title">JEE-Advanced 2026 Question Papers</span><a href="https://example.com/web-pdfs/jee-adv-2026.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Advanced 2025 Question Papers</span><a href="https://example.com/web-pdfs/jee-adv-2025.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Advanced 2024 Question Papers</span><a href="https://example.com/web-pdfs/jee-adv-2024.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Advanced 2023 Question Papers</span><a href="https://example.com/web-pdfs/jee-adv-2023.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Advanced 2022 Question Papers</span><a href="https://example.com/web-pdfs/jee-adv-2022.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Advanced 2021 Question Papers</span><a href="https://example.com/web-pdfs/jee-adv-2021.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Advanced 2020 Question Papers</span><a href="https://example.com/web-pdfs/jee-adv-2020.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Advanced 2019 Question Papers</span><a href="https://example.com/web-pdfs/jee-adv-2019.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Advanced 2018 Question Papers</span><a href="https://example.com/web-pdfs/jee-adv-2018.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Advanced 2017 Question Papers</span><a href="https://example.com/web-pdfs/jee-adv-2017.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Advanced 2016 Question Papers</span><a href="https://example.com/web-pdfs/jee-adv-2016.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                    <div class="paper-row"><span class="paper-title">JEE-Advanced 2015 Question Papers</span><a href="https://example.com/web-pdfs/jee-adv-2015.pdf" target="_blank" rel="noopener noreferrer" class="view-btn">Open Paper</a></div>
+                </div>
+            </div>
+    
+            <div id="fallback-msg">
+                <h2>Exam Identifier Missing</h2>
+                <p>Please navigate back to the primary dashboard and choose a valid category link.</p>
+            </div>
+        </div>
+    
+        <footer>
+            © 2026 Sarkaari Setu+ • Question Papers with Answers
+        </footer>
+    
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            let examType = urlParams.get('exam');
+    
+            if (examType) {
+                examType = examType.toUpperCase().trim();
+                const targetDomId = 'section-' + examType;
+                const targetSection = document.getElementById(targetDomId);
+                
+                if (targetSection) {
+                    targetSection.style.display = 'block';
+                    document.getElementById('main-heading').innerText = examType + " Papers";
+                } else {
+                    document.getElementById('fallback-msg').style.display = 'block';
+                }
+            } else {
+                document.getElementById('fallback-msg').style.display = 'block';
+            }
+        </script>
+    </body>
+</html>
